@@ -1,0 +1,381 @@
+//
+//  TuneUserProfile.h
+//  TuneMarketingConsoleSDK
+//
+//  Created by Daniel Koch on 8/3/15.
+//  Copyright (c) 2015 Tune. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "TuneAnalyticsVariable.h"
+#import "TuneModule.h"
+
+@class TuneLocation;
+@class TunePreloadData;
+
+@protocol TuneUserProfileDelegate;
+
+@interface TuneUserProfile : TuneModule
+
+/////////////////////////////////////////////////
+#pragma mark - App ID Generators
+/////////////////////////////////////////////////
+
+#if TARGET_OS_IOS
+- (void)loadFacebookCookieId;
+#endif
+
+#if !TARGET_OS_WATCH
+- (void)updateIFA;
+- (void)clearIFA;
+#endif
+
+- (NSString *)hashedAppId;
+
+/////////////////////////////////////////////////
+#pragma mark - Profile Variable Management
+/////////////////////////////////////////////////
+
+- (id) getProfileValue:(NSString *)key;
+- (TuneAnalyticsVariable *) getProfileVariable:(NSString*)key;
+- (NSDictionary *) getProfileVariables;
+
+/////////////////////////////////////////////////
+#pragma mark - Single-property Getters and Setters
+/////////////////////////////////////////////////
+
+- (BOOL)tooYoungForTargetedAds;
+- (BOOL)shouldRedactKey:(NSString *)key;
+
+- (NSString *)deviceId;
+
+- (NSString *)installReceipt;
+
+- (void)setDeviceToken:(NSString *)deviceToken;
+- (NSString *)deviceToken;
+
+- (void)setPushEnabled:(NSString *)pushEnabled;
+- (NSString *)pushEnabled;
+
+- (void)setSessionId:(NSString *)sessionId;
+- (NSString *)sessionId;
+
+- (void)setLastSessionDate:(NSDate *)lastSessionDate;
+- (NSDate *)lastSessionDate;
+
+- (void)setCurrentSessionDate:(NSDate *)currentSessionDate;
+- (NSDate *)currentSessionDate;
+
+- (void)setSessionCount:(NSNumber *)count;
+- (NSNumber *)sessionCount;
+
+- (void)setInstallDate:(NSDate *)installDate;
+- (NSDate *)installDate;
+
+- (void)setSessionDate:(NSString *)sessionDate;
+- (NSString *)sessionDate;
+
+- (void)setSystemDate:(NSDate *)systemDate;
+- (NSDate *)systemDate;
+
+- (void)setTuneId:(NSString *)tuneId;
+- (NSString *)tuneId;
+
+- (void)setIsFirstSession:(NSNumber *)isFirstSession;
+- (NSNumber *)isFirstSession;
+
+- (void)setInstallLogId:(NSString *)installLogId;
+- (NSString *)installLogId;
+
+- (void)setUpdateLogId:(NSString *)updateLogId;
+- (NSString *)updateLogId;
+
+- (void)setOpenLogId:(NSString *)openLogId;
+- (NSString *)openLogId;
+
+- (void)setLastOpenLogId:(NSString *)lastOpenLogId;
+- (NSString *)lastOpenLogId;
+
+- (void)setAdvertiserId:(NSString *)advertiserId;
+- (NSString *)advertiserId;
+
+- (void)setConversionKey:(NSString *)conversionKey;
+- (NSString *)conversionKey;
+
+- (void)setAppBundleId:(NSString *)bId;
+- (NSString *)appBundleId;
+
+- (void)setAppName:(NSString *)appName;
+- (NSString *)appName;
+
+- (void)setAppVersion:(NSString *)appVersion;
+- (NSString *)appVersion;
+
+- (void)setAppVersionName:(NSString *)appVersionName;
+- (NSString *)appVersionName;
+
+- (void)updateConnectionType;
+- (NSString *)connectionType;
+
+- (void)setWearable:(NSNumber *)wearable;
+- (NSNumber *)wearable;
+
+- (void)setExistingUser:(NSNumber *)existingUser;
+- (NSNumber *)existingUser;
+
+- (void)setAppleAdvertisingIdentifier:(NSString *)advertisingId;
+- (NSString *)appleAdvertisingIdentifier;
+
+- (void)setAppleAdvertisingTrackingEnabled:(NSNumber *)adTrackingEnabled;
+- (NSNumber *)appleAdvertisingTrackingEnabled;
+
+- (void)setAppleVendorIdentifier:(NSString *)appleVendorIdentifier;
+- (NSString *)appleVendorIdentifier;
+
+- (void)setJailbroken:(NSNumber *)jailbroken;
+- (NSNumber *)jailbroken;
+
+- (void)setPackageName:(NSString *)packageName;
+- (NSString *)packageName;
+
+- (void)setUserId:(NSString *)userId;
+- (NSString *)userId;
+
+- (void)setTrackingId:(NSString *)trackingId;
+- (NSString *)trackingId;
+
+- (void)setFacebookUserId:(NSString *)facebookUserId;
+- (NSString *)facebookUserId;
+
+- (void)setFacebookCookieId:(NSString *)facebookCookieId;
+- (NSString *)facebookCookieId;
+
+- (void)setTwitterUserId:(NSString *)twitterUserId;
+- (NSString *)twitterUserId;
+
+- (void)setGoogleUserId:(NSString *)googleUserId;
+- (NSString *)googleUserId;
+
+- (void)setPrivacyProtectedDueToAge:(BOOL)privacyProtected;
+- (BOOL)privacyProtectedDueToAge;
+
+- (void)setAge:(NSNumber *)age;
+- (NSNumber *)age;
+
+- (void)setGender:(NSNumber *)gender;
+- (NSNumber *)gender;
+
+- (void)setAppAdTracking:(NSNumber *)enable;
+- (NSNumber *)appAdTracking;
+
+- (void)setLocationAuthorizationStatus:(NSNumber *)authStatus;
+- (NSNumber *)locationAuthorizationStatus;
+
+- (void)setBluetoothState:(NSNumber *)bluetoothState;
+- (NSNumber *)bluetoothState;
+
+- (void)setPayingUser:(NSNumber *)payingState;
+- (NSNumber *)payingUser;
+
+- (void)setOsType:(NSString *)osType;
+- (NSString *)osType;
+
+- (void)setDeviceModel:(NSString *)deviceModel;
+- (NSString *)deviceModel;
+
+- (void)setDeviceCpuType:(NSNumber *)deviceCpuType;
+- (NSNumber *)deviceCpuType;
+
+- (void)setDeviceCpuSubtype:(NSNumber *)deviceCpuSubtype;
+- (NSNumber *)deviceCpuSubtype;
+
+- (void)setDeviceCarrier:(NSString *)deviceCarrier;
+- (NSString *)deviceCarrier;
+
+- (void)setDeviceBrand:(NSString *)deviceBrand;
+- (NSString *)deviceBrand;
+
+- (void)setDeviceBuild:(NSString *)deviceBuild;
+- (NSString *)deviceBuild;
+
+- (void)setScreenHeight:(NSNumber *)screenHeight;
+- (NSNumber *)screenHeight;
+
+- (void)setScreenWidth:(NSNumber *)screenWidth;
+- (NSNumber *)screenWidth;
+
+- (void)setScreenSize:(NSString *)screenSize;
+- (NSString *)screenSize;
+
+- (void)setScreenDensity:(NSNumber *)screenDensity;
+- (NSNumber *)screenDensity;
+
+- (void)setMobileCountryCode:(NSString *)mobileCountryCode;
+- (NSString *)mobileCountryCode;
+
+- (void)setMobileCountryCodeISO:(NSString *)mobileCountryCodeISO;
+- (NSString *)mobileCountryCodeISO;
+
+- (void)setMobileNetworkCode:(NSString *)mobileNetworkCode;
+- (NSString *)mobileNetworkCode;
+
+- (void)setCountryCode:(NSString *)countryCode;
+- (NSString *)countryCode;
+
+- (void)setOsVersion:(NSString *)osVersion;
+- (NSString *)osVersion;
+
+- (void)setLanguage:(NSString *)language;
+- (NSString *)language;
+
+- (void)setLocale:(NSString *)locale;
+- (NSString *)locale;
+
+- (void)setReferralUrl:(NSString *)url;
+- (NSString *)referralUrl;
+
+- (void)setReferralSource:(NSString *)source;
+- (NSString *)referralSource;
+
+- (void)setIadAttribution:(NSNumber *)iadAttribution;
+- (NSNumber *)iadAttribution;
+
+- (void)setIadImpressionDate:(NSDate *)iadImpressionDate;
+- (NSDate *)iadImpressionDate;
+
+- (void)setIadClickDate:(NSDate *)iadClickDate;
+- (NSDate *)iadClickDate;
+
+- (void)setIadConversionDate:(NSDate *)iadConversionDate;
+- (NSDate *)iadConversionDate;
+
+- (void)setAdvertiserSubAd:(NSString *)advertiserSubAd;
+- (NSString *)advertiserSubAd;
+
+- (void)setAdvertiserSubAdgroup:(NSString *)advertiserSubAdgroup;
+- (NSString *)advertiserSubAdgroup;
+
+- (void)setAdvertiserSubCampaign:(NSString *)advertiserSubCampaign;
+- (NSString *)advertiserSubCampaign;
+
+- (void)setAdvertiserSubKeyword:(NSString *)advertiserSubKeyword;
+- (NSString *)advertiserSubKeyword;
+
+- (void)setAdvertiserSubPublisher:(NSString *)advertiserSubPublisher;
+- (NSString *)advertiserSubPublisher;
+
+- (void)setAdvertiserSubSite:(NSString *)advertiserSubSite;
+- (NSString *)advertiserSubSite;
+
+- (void)setAgencyId:(NSString *)agencyId;
+- (NSString *)agencyId;
+
+- (void)setOfferId:(NSString *)offerId;
+- (NSString *)offerId;
+
+- (void)setPublisherId:(NSString *)publisherId;
+- (NSString *)publisherId;
+
+- (void)setPublisherReferenceId:(NSString *)publisherReferenceId;
+- (NSString *)publisherReferenceId;
+
+- (void)setPublisherSubAd:(NSString *)publisherSubAd;
+- (NSString *)publisherSubAd;
+
+- (void)setPublisherSubAdName:(NSString *)publisherSubAdName;
+- (NSString *)publisherSubAdName;
+
+- (void)setPublisherSubAdRef:(NSString *)publisherSubAdRef;
+- (NSString *)publisherSubAdRef;
+
+- (void)setPublisherSubAdgroup:(NSString *)publisherSubAdgroup;
+- (NSString *)publisherSubAdgroup;
+
+- (void)setPublisherSubCampaign:(NSString *)publisherSubCampaign;
+- (NSString *)publisherSubCampaign;
+
+- (void)setPublisherSubCampaignName:(NSString *)publisherSubCampaignName;
+- (NSString *)publisherSubCampaignName;
+
+- (void)setPublisherSubCampaignRef:(NSString *)publisherSubCampaignRef;
+- (NSString *)publisherSubCampaignRef;
+
+- (void)setPublisherSubKeyword:(NSString *)publisherSubKeyword;
+- (NSString *)publisherSubKeyword;
+
+- (void)setPublisherSubKeywordRef:(NSString *)publisherSubKeywordRef;
+- (NSString *)publisherSubKeywordRef;
+
+- (void)setPublisherSubPlacementName:(NSString *)publisherSubPlacementName;
+- (NSString *)publisherSubPlacementName;
+
+- (void)setPublisherSubPlacementRef:(NSString *)publisherSubPlacementRef;
+- (NSString *)publisherSubPlacementRef;
+
+- (void)setPublisherSubPublisher:(NSString *)publisherSubPublisher;
+- (NSString *)publisherSubPublisher;
+
+- (void)setPublisherSubPublisherRef:(NSString *)publisherSubPublisherRef;
+- (NSString *)publisherSubPublisherRef;
+
+- (void)setPublisherSubSite:(NSString *)publisherSubSite;
+- (NSString *)publisherSubSite;
+
+- (void)setPublisherSub1:(NSString *)publisherSub1;
+- (NSString *)publisherSub1;
+
+- (void)setPublisherSub2:(NSString *)publisherSub2;
+- (NSString *)publisherSub2;
+
+- (void)setPublisherSub3:(NSString *)publisherSub3;
+- (NSString *)publisherSub3;
+
+- (void)setPublisherSub4:(NSString *)publisherSub4;
+- (NSString *)publisherSub4;
+
+- (void)setPublisherSub5:(NSString *)publisherSub5;
+- (NSString *)publisherSub5;
+
+- (void)setInterfaceIdiom:(NSString *)interfaceIdiom;
+- (NSString *)interfaceIdiom;
+
+- (void)setHardwareType:(NSString *)hardwareType;
+- (NSString *)hardwareType;
+
+- (void)setMinutesFromGMT:(NSNumber *)minutesFromGMT;
+- (NSNumber *)minutesFromGMT;
+
+- (void)setSDKVersion:(NSString *)sdkVersion;
+- (NSString *)sdkVersion;
+
+- (void)setUserEmail:(NSString *)email;
+- (NSString *)userEmailMd5;
+- (NSString *)userEmailSha1;
+- (NSString *)userEmailSha256;
+
+- (void)setUserName:(NSString *)name;
+- (NSString *)userNameMd5;
+- (NSString *)userNameSha1;
+- (NSString *)userNameSha256;
+
+- (void)setPhoneNumber:(NSString *)number;
+- (NSString *)phoneNumberMd5;
+- (NSString *)phoneNumberSha1;
+- (NSString *)phoneNumberSha256;
+
+- (void)setLocation:(TuneLocation *)location;
+- (TuneLocation *)location;
+
+- (void)setIsTestFlightBuild:(NSNumber *)isTestFlightBuild;
+- (NSNumber *)isTestFlightBuild;
+
+- (void)setPreloadData:(TunePreloadData *)preloadData;
+
+/////////////////////////////////////////////////
+#pragma mark - Loading/Saving methods
+/////////////////////////////////////////////////
+
+- (void) loadSavedProfile;
+
+@end

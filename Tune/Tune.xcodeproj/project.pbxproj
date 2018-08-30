@@ -1,0 +1,2508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1761D4A72020FB0E007FA9CA /* TuneUniversal_tvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1761D4A82020FB0F007FA9CA /* Build configuration list for PBXAggregateTarget "TuneUniversal_tvOS" */;
+			buildPhases = (
+				1761D4AC2020FB36007FA9CA /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TuneUniversal_tvOS;
+			productName = TuneUniversal_tvOS;
+		};
+		178F059520053DF20088C0ED /* TuneUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 178F059620053DF20088C0ED /* Build configuration list for PBXAggregateTarget "TuneUniversal" */;
+			buildPhases = (
+				178F059A20053FA80088C0ED /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TuneUniversal;
+			productName = TuneUniversal;
+		};
+		17BAA1862025376200F26DD3 /* TuneUniversal_static */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 17BAA1872025376200F26DD3 /* Build configuration list for PBXAggregateTarget "TuneUniversal_static" */;
+			buildPhases = (
+				17BAA18B202537AF00F26DD3 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TuneUniversal_static;
+			productName = TuneUniversal_static;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		17301C6C1FFEE5A6001ADCC2 /* Tune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17301C631FFEE5A5001ADCC2 /* Tune.framework */; };
+		17301C7C1FFEE627001ADCC2 /* NSData+TuneGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE9A1B7DA91B00501733 /* NSData+TuneGZIP.h */; };
+		17301C7D1FFEE62A001ADCC2 /* NSData+TuneGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE9B1B7DA93400501733 /* NSData+TuneGZIP.m */; };
+		17301C881FFEE644001ADCC2 /* TuneCWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A291B65F9B8005216E2 /* TuneCWorks.h */; };
+		17301C891FFEE644001ADCC2 /* TuneCWorks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2A1B65F9B8005216E2 /* TuneCWorks.m */; };
+		17301C8A1FFEE644001ADCC2 /* TuneDeeplinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2B1B65F9B8005216E2 /* TuneDeeplinker.h */; };
+		17301C8B1FFEE644001ADCC2 /* TuneDeeplinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2C1B65F9B8005216E2 /* TuneDeeplinker.m */; };
+		17301C8C1FFEE644001ADCC2 /* TuneEventKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5A40081B83A801005DE80A /* TuneEventKeys.h */; };
+		17301C8D1FFEE644001ADCC2 /* TuneEventKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A400A1B83A813005DE80A /* TuneEventKeys.m */; };
+		17301C8E1FFEE644001ADCC2 /* TuneEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2F1B65F9B8005216E2 /* TuneEventQueue.h */; };
+		17301C8F1FFEE644001ADCC2 /* TuneEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A301B65F9B8005216E2 /* TuneEventQueue.m */; };
+		17301C901FFEE644001ADCC2 /* TuneFBBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A311B65F9B8005216E2 /* TuneFBBridge.h */; };
+		17301C911FFEE644001ADCC2 /* TuneFBBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A321B65F9B8005216E2 /* TuneFBBridge.m */; };
+		17301C921FFEE644001ADCC2 /* TuneIfa.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE771B79B6F000501733 /* TuneIfa.h */; };
+		17301C931FFEE644001ADCC2 /* TuneIfa.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE781B79B6F000501733 /* TuneIfa.m */; };
+		17301C941FFEE644001ADCC2 /* TuneInstallReceipt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A331B65F9B8005216E2 /* TuneInstallReceipt.h */; };
+		17301C951FFEE644001ADCC2 /* TuneInstallReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A341B65F9B8005216E2 /* TuneInstallReceipt.m */; };
+		17301C961FFEE644001ADCC2 /* TuneKeyStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A351B65F9B8005216E2 /* TuneKeyStrings.h */; };
+		17301C971FFEE644001ADCC2 /* TuneKeyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A361B65F9B8005216E2 /* TuneKeyStrings.m */; };
+		17301C981FFEE644001ADCC2 /* TuneLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A371B65F9B8005216E2 /* TuneLocationHelper.h */; };
+		17301C991FFEE644001ADCC2 /* TuneLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A381B65F9B8005216E2 /* TuneLocationHelper.m */; };
+		17301C9A1FFEE644001ADCC2 /* TuneReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A391B65F9B8005216E2 /* TuneReachability.h */; };
+		17301C9B1FFEE644001ADCC2 /* TuneReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A3A1B65F9B8005216E2 /* TuneReachability.m */; };
+		17301C9E1FFEE644001ADCC2 /* TuneStoreKitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A3F1B65F9B8005216E2 /* TuneStoreKitDelegate.h */; };
+		17301C9F1FFEE644001ADCC2 /* TuneStoreKitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A401B65F9B8005216E2 /* TuneStoreKitDelegate.m */; };
+		17301CA01FFEE644001ADCC2 /* TuneTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A411B65F9B8005216E2 /* TuneTracker.h */; };
+		17301CA11FFEE644001ADCC2 /* TuneTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A421B65F9B8005216E2 /* TuneTracker.m */; };
+		17301CA21FFEE644001ADCC2 /* TuneUserAgentCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A431B65F9B8005216E2 /* TuneUserAgentCollector.h */; };
+		17301CA31FFEE644001ADCC2 /* TuneUserAgentCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A441B65F9B8005216E2 /* TuneUserAgentCollector.m */; };
+		17301CA41FFEE649001ADCC2 /* TuneAnalyticsConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D61F1B6F1B61008101CE /* TuneAnalyticsConstants.h */; };
+		17301CA51FFEE649001ADCC2 /* TuneAnalyticsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6201B6F1B61008101CE /* TuneAnalyticsConstants.m */; };
+		17301CAA1FFEE64E001ADCC2 /* TuneDeeplink.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B9A42C1BBB3703006E3D4F /* TuneDeeplink.h */; };
+		17301CAB1FFEE64E001ADCC2 /* TuneDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A42D1BBB3703006E3D4F /* TuneDeeplink.m */; };
+		17301CE21FFEE6C2001ADCC2 /* Tune+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A251B65F9B8005216E2 /* Tune+Internal.h */; };
+		17301CE31FFEE6C2001ADCC2 /* TuneEvent+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A261B65F9B8005216E2 /* TuneEvent+Internal.h */; };
+		17301CE41FFEE6C2001ADCC2 /* TuneEventItem+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD219931B98D63100626DC6 /* TuneEventItem+Internal.h */; };
+		17301CE71FFEE6C2001ADCC2 /* TuneLocation+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7B1B79CC1D00501733 /* TuneLocation+Internal.h */; };
+		17301CEC1FFEE6CC001ADCC2 /* TuneAnalyticsVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6211B6F1B61008101CE /* TuneAnalyticsVariable.h */; };
+		17301CED1FFEE6CC001ADCC2 /* TuneAnalyticsVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6221B6F1B61008101CE /* TuneAnalyticsVariable.m */; };
+		17301CFC1FFEE6DE001ADCC2 /* TuneConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6401B6F1E32008101CE /* TuneConfiguration.h */; };
+		17301CFD1FFEE6DE001ADCC2 /* TuneConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6411B6F1FAC008101CE /* TuneConfiguration.m */; };
+		17301D0A1FFEE94E001ADCC2 /* TuneFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE851B7B8C5B00501733 /* TuneFileManager.h */; };
+		17301D0B1FFEE94E001ADCC2 /* TuneFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE881B7B8C6900501733 /* TuneFileManager.m */; };
+		17301D141FFEE95B001ADCC2 /* TuneUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6451B6F431A008101CE /* TuneUserProfile.h */; };
+		17301D151FFEE95B001ADCC2 /* TuneUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6461B6F433C008101CE /* TuneUserProfile.m */; };
+		17301D161FFEE95B001ADCC2 /* TuneUserProfileKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F25EEC61B756A1F00DD3C21 /* TuneUserProfileKeys.h */; };
+		17301D171FFEE95B001ADCC2 /* TuneUserProfileKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F25EEC81B756A3900DD3C21 /* TuneUserProfileKeys.m */; };
+		17301D181FFEE961001ADCC2 /* TuneSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFEDC1B827FDF00501733 /* TuneSessionManager.h */; };
+		17301D191FFEE961001ADCC2 /* TuneSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEDD1B82804000501733 /* TuneSessionManager.m */; };
+		17301D1A1FFEE968001ADCC2 /* TuneSkyhookConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EC1B65F949005216E2 /* TuneSkyhookConstants.h */; };
+		17301D1B1FFEE968001ADCC2 /* TuneSkyhookConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59ED1B65F949005216E2 /* TuneSkyhookConstants.m */; };
+		17301D1C1FFEE968001ADCC2 /* TuneSkyhookPayloadConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6251B6F1B61008101CE /* TuneSkyhookPayloadConstants.h */; };
+		17301D1D1FFEE968001ADCC2 /* TuneSkyhookPayloadConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6261B6F1B61008101CE /* TuneSkyhookPayloadConstants.m */; };
+		17301D1E1FFEE96C001ADCC2 /* TuneSkyhookCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E61B65F949005216E2 /* TuneSkyhookCenter.h */; };
+		17301D1F1FFEE96C001ADCC2 /* TuneSkyhookCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E71B65F949005216E2 /* TuneSkyhookCenter.m */; };
+		17301D201FFEE96C001ADCC2 /* TuneSkyhookPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E81B65F949005216E2 /* TuneSkyhookPayload.h */; };
+		17301D211FFEE96C001ADCC2 /* TuneSkyhookPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E91B65F949005216E2 /* TuneSkyhookPayload.m */; };
+		17301D221FFEE96C001ADCC2 /* TuneSkyhookObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EA1B65F949005216E2 /* TuneSkyhookObserver.h */; };
+		17301D231FFEE96C001ADCC2 /* TuneSkyhookObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59EB1B65F949005216E2 /* TuneSkyhookObserver.m */; };
+		17301D2A1FFEE979001ADCC2 /* TuneHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8D11B7D466500A98BF9 /* TuneHttpRequest.h */; };
+		17301D2B1FFEE979001ADCC2 /* TuneHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8D21B7D466500A98BF9 /* TuneHttpRequest.m */; };
+		17301D2C1FFEE979001ADCC2 /* TuneHttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B850E1B7C0EC200994318 /* TuneHttpResponse.h */; };
+		17301D2D1FFEE979001ADCC2 /* TuneHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B850F1B7C0EC200994318 /* TuneHttpResponse.m */; };
+		17301D2E1FFEE979001ADCC2 /* TuneHttpUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B851C1B7C114A00994318 /* TuneHttpUtils.h */; };
+		17301D2F1FFEE979001ADCC2 /* TuneHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B851D1B7C114A00994318 /* TuneHttpUtils.m */; };
+		17301D321FFEE980001ADCC2 /* Tune.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59BC1B65F922005216E2 /* Tune.m */; };
+		17301D331FFEE980001ADCC2 /* TuneConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8868EE01C0FA880007E2F9C /* TuneConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17301D361FFEE980001ADCC2 /* TuneEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C21B65F922005216E2 /* TuneEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17301D371FFEE980001ADCC2 /* TuneEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C31B65F922005216E2 /* TuneEvent.m */; };
+		17301D381FFEE980001ADCC2 /* TuneEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C41B65F922005216E2 /* TuneEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17301D391FFEE980001ADCC2 /* TuneEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C51B65F922005216E2 /* TuneEventItem.m */; };
+		17301D3C1FFEE980001ADCC2 /* TuneLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7C1B79CC1D00501733 /* TuneLocation.h */; };
+		17301D3D1FFEE980001ADCC2 /* TuneLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE7D1B79CC1D00501733 /* TuneLocation.m */; };
+		17301D3E1FFEE980001ADCC2 /* TuneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59B11B65F922005216E2 /* TuneManager.h */; };
+		17301D3F1FFEE980001ADCC2 /* TuneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B21B65F922005216E2 /* TuneManager.m */; };
+		17301D401FFEE980001ADCC2 /* TuneModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59AF1B65F922005216E2 /* TuneModule.h */; };
+		17301D411FFEE980001ADCC2 /* TuneModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B01B65F922005216E2 /* TuneModule.m */; };
+		17301D441FFEE980001ADCC2 /* TunePreloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C81B65F922005216E2 /* TunePreloadData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17301D451FFEE980001ADCC2 /* TunePreloadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C91B65F922005216E2 /* TunePreloadData.m */; };
+		17301D461FFEE980001ADCC2 /* TuneConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8947091CC55D5A00525862 /* TuneConstants.m */; };
+		17301D591FFEE9A8001ADCC2 /* TuneDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E91B67E494000C7462 /* TuneDateUtils.h */; };
+		17301D5A1FFEE9A8001ADCC2 /* TuneDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6EA1B67E494000C7462 /* TuneDateUtils.m */; };
+		17301D5B1FFEE9A8001ADCC2 /* TuneDeviceDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8631B7D164300A98BF9 /* TuneDeviceDetails.h */; };
+		17301D5C1FFEE9A8001ADCC2 /* TuneDeviceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8641B7D164300A98BF9 /* TuneDeviceDetails.m */; };
+		17301D5D1FFEE9A8001ADCC2 /* TuneDeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F88F0B1B8512690060CDE7 /* TuneDeviceUtils.h */; };
+		17301D5E1FFEE9A8001ADCC2 /* TuneDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F88F0C1B8512690060CDE7 /* TuneDeviceUtils.m */; };
+		17301D5F1FFEE9A8001ADCC2 /* TuneEncrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2D1B65F9B8005216E2 /* TuneEncrypter.h */; };
+		17301D601FFEE9A8001ADCC2 /* TuneEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2E1B65F9B8005216E2 /* TuneEncrypter.m */; };
+		17301D611FFEE9A8001ADCC2 /* TuneFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B52709E1B7140420019ED0E /* TuneFileUtils.h */; };
+		17301D621FFEE9A8001ADCC2 /* TuneFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B52709F1B7141E40019ED0E /* TuneFileUtils.m */; };
+		17301D631FFEE9A8001ADCC2 /* TuneIadUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F81A460F1D9EF54D00D50867 /* TuneIadUtils.h */; };
+		17301D641FFEE9A8001ADCC2 /* TuneIadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A46101D9EF54D00D50867 /* TuneIadUtils.m */; };
+		17301D6F1FFEE9A8001ADCC2 /* TuneNetworkUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A6A9EC1D79D0AC00389F65 /* TuneNetworkUtils.h */; };
+		17301D701FFEE9A8001ADCC2 /* TuneNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A6A9ED1D79D0AC00389F65 /* TuneNetworkUtils.m */; };
+		17301D731FFEE9A8001ADCC2 /* TuneStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E11B66CA0B000C7462 /* TuneStringUtils.h */; };
+		17301D741FFEE9A8001ADCC2 /* TuneStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6E21B66CA0B000C7462 /* TuneStringUtils.m */; };
+		17301D751FFEE9A8001ADCC2 /* TuneUserDefaultsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4BB1E81B824B0A0084864D /* TuneUserDefaultsUtils.h */; };
+		17301D761FFEE9A8001ADCC2 /* TuneUserDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB1EA1B824B2C0084864D /* TuneUserDefaultsUtils.m */; };
+		17301D771FFEE9A8001ADCC2 /* TuneUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A451B65F9B8005216E2 /* TuneUtils.h */; };
+		17301D781FFEE9A8001ADCC2 /* TuneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A461B65F9B8005216E2 /* TuneUtils.m */; };
+		17301D8F1FFEEC0F001ADCC2 /* TuneFileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE8B1B7BA8EA00501733 /* TuneFileManagerTests.m */; };
+		17301D901FFEEC0F001ADCC2 /* TuneSessionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEE01B86A00500501733 /* TuneSessionManagerTests.m */; };
+		17301D911FFEEC0F001ADCC2 /* TuneSkyhookCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB918C3B1B8E62310077305B /* TuneSkyhookCenterTests.m */; };
+		17301D931FFEEC0F001ADCC2 /* TuneUserProfileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F54FE5C1B7C1A6E00813EAA /* TuneUserProfileTests.m */; };
+		17301D961FFEEC1B001ADCC2 /* TuneConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBCA43521B8FA94800483318 /* TuneConfiguration.plist */; };
+		17301D971FFEEC1B001ADCC2 /* TunePowerHookValueTests.json in Resources */ = {isa = PBXBuildFile; fileRef = DB9135671B68114B006534E0 /* TunePowerHookValueTests.json */; };
+		17301D981FFEEC1B001ADCC2 /* TuneExperimentManagerTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BC5F61BBC59DB009FD499 /* TuneExperimentManagerTests.json */; };
+		17301DA11FFEEC42001ADCC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BCB5ACE1B660A01005216E2 /* InfoPlist.strings */; };
+		17301DA41FFEEC59001ADCC2 /* DictionaryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6F11B680079000C7462 /* DictionaryLoader.m */; };
+		17301DA51FFEEC59001ADCC2 /* NSURLRequest+TuneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEB61B7E4CB700501733 /* NSURLRequest+TuneUtils.m */; };
+		17301DA61FFEEC59001ADCC2 /* SimpleObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DB40D33A1B87D0440034F218 /* SimpleObserver.m */; };
+		17301DA71FFEEC59001ADCC2 /* TuneBlankAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AC66AF1BA8F39E0069B549 /* TuneBlankAppDelegate.m */; };
+		17301DA81FFEEC59001ADCC2 /* TuneBlankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0FF56F1B9107660071B996 /* TuneBlankViewController.m */; };
+		17301DA91FFEEC59001ADCC2 /* TuneTestsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F421B66325E00C51B87 /* TuneTestsHelper.m */; };
+		17301DAA1FFEEC59001ADCC2 /* TuneTestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F671B66343400C51B87 /* TuneTestParams.m */; };
+		17301DAB1FFEEC59001ADCC2 /* TuneXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F83419CA1CE3F4CC00142934 /* TuneXCTestCase.m */; };
+		17301DAE1FFEEC5E001ADCC2 /* TuneDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83109941C8F6C90000669EF /* TuneDateUtilsTests.m */; };
+		17301DB11FFEEC68001ADCC2 /* TuneDeeplinkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F847F4481C87BF8A009E0531 /* TuneDeeplinkerTests.m */; };
+		17301DB31FFEEC68001ADCC2 /* TuneEncrypterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F4B1B66325E00C51B87 /* TuneEncrypterTests.m */; };
+		17301DB41FFEEC68001ADCC2 /* TuneEventItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F4A1B66325E00C51B87 /* TuneEventItemTests.m */; };
+		17301DB51FFEEC68001ADCC2 /* TuneEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F521B66325E00C51B87 /* TuneEventTests.m */; };
+		17301DB61FFEEC68001ADCC2 /* TuneHTTPErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F491B66325E00C51B87 /* TuneHTTPErrorTests.m */; };
+		17301DB71FFEEC68001ADCC2 /* TuneIadAttributionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A460D1D9EE9D800D50867 /* TuneIadAttributionTests.m */; };
+		17301DB81FFEEC68001ADCC2 /* TuneMeasureEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CE1DD1B7976EF00BECDFC /* TuneMeasureEventTests.m */; };
+		17301DB91FFEEC68001ADCC2 /* TuneParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F481B66325E00C51B87 /* TuneParametersTests.m */; };
+		17301DBA1FFEEC68001ADCC2 /* TunePreloadDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F471B66325E00C51B87 /* TunePreloadDataTests.m */; };
+		17301DBB1FFEEC68001ADCC2 /* TuneQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F461B66325E00C51B87 /* TuneQueueTests.m */; };
+		17301DBC1FFEEC68001ADCC2 /* TuneServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F451B66325E00C51B87 /* TuneServerTests.m */; };
+		17301DBD1FFEEC68001ADCC2 /* TuneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F441B66325E00C51B87 /* TuneTests.m */; };
+		17301DBE1FFEEC68001ADCC2 /* TuneTrackerInitializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F411B66325E00C51B87 /* TuneTrackerInitializationTests.m */; };
+		17301DBF1FFEEC68001ADCC2 /* TuneUserDefaultsUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB1ED1B82514A0084864D /* TuneUserDefaultsUtilsTests.m */; };
+		17301DC01FFEEC68001ADCC2 /* TuneUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F401B66325E00C51B87 /* TuneUtilsTests.m */; };
+		17301DC21FFEEC6C001ADCC2 /* NSURLSession+TuneDelegateMockServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768F8E61FBFAC68005D2958 /* NSURLSession+TuneDelegateMockServer.m */; };
+		17301DC31FFEEC6C001ADCC2 /* TuneRedactedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713E72C1FD0BA6D00214122 /* TuneRedactedTests.m */; };
+		17301DC41FFEEC6C001ADCC2 /* TuneNotRedactedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E6D3A1FDEF7A400418D1E /* TuneNotRedactedTests.m */; };
+		17301DC51FFEEC93001ADCC2 /* Tune.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59BB1B65F922005216E2 /* Tune.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C325F201BE38100772F28 /* Tune_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174C3256201BE37E00772F28 /* Tune_tvOS.framework */; };
+		174C3264201BE38100772F28 /* Tune_tvOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 174C3263201BE38100772F28 /* Tune_tvOSTests.m */; };
+		174C3266201BE38100772F28 /* Tune_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 174C3258201BE37F00772F28 /* Tune_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C326F201BEAFE00772F28 /* NSData+TuneGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE9A1B7DA91B00501733 /* NSData+TuneGZIP.h */; };
+		174C3270201BEAFE00772F28 /* NSData+TuneGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE9B1B7DA93400501733 /* NSData+TuneGZIP.m */; };
+		174C327B201BEB0A00772F28 /* TuneCWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A291B65F9B8005216E2 /* TuneCWorks.h */; };
+		174C327C201BEB0A00772F28 /* TuneCWorks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2A1B65F9B8005216E2 /* TuneCWorks.m */; };
+		174C327D201BEB0A00772F28 /* TuneDeeplinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2B1B65F9B8005216E2 /* TuneDeeplinker.h */; };
+		174C327E201BEB0A00772F28 /* TuneDeeplinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2C1B65F9B8005216E2 /* TuneDeeplinker.m */; };
+		174C327F201BEB0A00772F28 /* TuneEventKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5A40081B83A801005DE80A /* TuneEventKeys.h */; };
+		174C3280201BEB0A00772F28 /* TuneEventKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A400A1B83A813005DE80A /* TuneEventKeys.m */; };
+		174C3281201BEB0A00772F28 /* TuneEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2F1B65F9B8005216E2 /* TuneEventQueue.h */; };
+		174C3282201BEB0A00772F28 /* TuneEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A301B65F9B8005216E2 /* TuneEventQueue.m */; };
+		174C3283201BEB0A00772F28 /* TuneFBBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A311B65F9B8005216E2 /* TuneFBBridge.h */; };
+		174C3284201BEB0A00772F28 /* TuneFBBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A321B65F9B8005216E2 /* TuneFBBridge.m */; };
+		174C3285201BEB0A00772F28 /* TuneIfa.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE771B79B6F000501733 /* TuneIfa.h */; };
+		174C3286201BEB0A00772F28 /* TuneIfa.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE781B79B6F000501733 /* TuneIfa.m */; };
+		174C3287201BEB0A00772F28 /* TuneInstallReceipt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A331B65F9B8005216E2 /* TuneInstallReceipt.h */; };
+		174C3288201BEB0A00772F28 /* TuneInstallReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A341B65F9B8005216E2 /* TuneInstallReceipt.m */; };
+		174C3289201BEB0A00772F28 /* TuneKeyStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A351B65F9B8005216E2 /* TuneKeyStrings.h */; };
+		174C328A201BEB0A00772F28 /* TuneKeyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A361B65F9B8005216E2 /* TuneKeyStrings.m */; };
+		174C328B201BEB0A00772F28 /* TuneLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A371B65F9B8005216E2 /* TuneLocationHelper.h */; };
+		174C328C201BEB0A00772F28 /* TuneLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A381B65F9B8005216E2 /* TuneLocationHelper.m */; };
+		174C328D201BEB0A00772F28 /* TuneReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A391B65F9B8005216E2 /* TuneReachability.h */; };
+		174C328E201BEB0A00772F28 /* TuneReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A3A1B65F9B8005216E2 /* TuneReachability.m */; };
+		174C3291201BEB0A00772F28 /* TuneStoreKitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A3F1B65F9B8005216E2 /* TuneStoreKitDelegate.h */; };
+		174C3292201BEB0A00772F28 /* TuneStoreKitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A401B65F9B8005216E2 /* TuneStoreKitDelegate.m */; };
+		174C3293201BEB0A00772F28 /* TuneTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A411B65F9B8005216E2 /* TuneTracker.h */; };
+		174C3294201BEB0A00772F28 /* TuneTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A421B65F9B8005216E2 /* TuneTracker.m */; };
+		174C3295201BEB0A00772F28 /* TuneUserAgentCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A431B65F9B8005216E2 /* TuneUserAgentCollector.h */; };
+		174C3296201BEB0A00772F28 /* TuneUserAgentCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A441B65F9B8005216E2 /* TuneUserAgentCollector.m */; };
+		174C3297201BEB1000772F28 /* TuneAnalyticsConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D61F1B6F1B61008101CE /* TuneAnalyticsConstants.h */; };
+		174C3298201BEB1000772F28 /* TuneAnalyticsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6201B6F1B61008101CE /* TuneAnalyticsConstants.m */; };
+		174C329D201BEB1500772F28 /* TuneDeeplink.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B9A42C1BBB3703006E3D4F /* TuneDeeplink.h */; };
+		174C329E201BEB1500772F28 /* TuneDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A42D1BBB3703006E3D4F /* TuneDeeplink.m */; };
+		174C32C7201BEB3900772F28 /* Tune+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A251B65F9B8005216E2 /* Tune+Internal.h */; };
+		174C32C8201BEB3900772F28 /* TuneEvent+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A261B65F9B8005216E2 /* TuneEvent+Internal.h */; };
+		174C32C9201BEB3900772F28 /* TuneEventItem+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD219931B98D63100626DC6 /* TuneEventItem+Internal.h */; };
+		174C32CC201BEB3900772F28 /* TuneLocation+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7B1B79CC1D00501733 /* TuneLocation+Internal.h */; };
+		174C32D1201BEB4200772F28 /* TuneAnalyticsVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6211B6F1B61008101CE /* TuneAnalyticsVariable.h */; };
+		174C32D2201BEB4200772F28 /* TuneAnalyticsVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6221B6F1B61008101CE /* TuneAnalyticsVariable.m */; };
+		174C32E1201BEC5000772F28 /* TuneConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6401B6F1E32008101CE /* TuneConfiguration.h */; };
+		174C32E2201BEC5000772F28 /* TuneConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6411B6F1FAC008101CE /* TuneConfiguration.m */; };
+		174C32EF201BEC6600772F28 /* TuneFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE851B7B8C5B00501733 /* TuneFileManager.h */; };
+		174C32F0201BEC6600772F28 /* TuneFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE881B7B8C6900501733 /* TuneFileManager.m */; };
+		174C32F9201BECD700772F28 /* TuneUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6451B6F431A008101CE /* TuneUserProfile.h */; };
+		174C32FA201BECD700772F28 /* TuneUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6461B6F433C008101CE /* TuneUserProfile.m */; };
+		174C32FB201BECD700772F28 /* TuneUserProfileKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F25EEC61B756A1F00DD3C21 /* TuneUserProfileKeys.h */; };
+		174C32FC201BECD700772F28 /* TuneUserProfileKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F25EEC81B756A3900DD3C21 /* TuneUserProfileKeys.m */; };
+		174C32FD201BECDC00772F28 /* TuneSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFEDC1B827FDF00501733 /* TuneSessionManager.h */; };
+		174C32FE201BECDC00772F28 /* TuneSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEDD1B82804000501733 /* TuneSessionManager.m */; };
+		174C32FF201BECE300772F28 /* TuneSkyhookConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EC1B65F949005216E2 /* TuneSkyhookConstants.h */; };
+		174C3300201BECE300772F28 /* TuneSkyhookConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59ED1B65F949005216E2 /* TuneSkyhookConstants.m */; };
+		174C3301201BECE300772F28 /* TuneSkyhookPayloadConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6251B6F1B61008101CE /* TuneSkyhookPayloadConstants.h */; };
+		174C3302201BECE300772F28 /* TuneSkyhookPayloadConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6261B6F1B61008101CE /* TuneSkyhookPayloadConstants.m */; };
+		174C3303201BECE700772F28 /* TuneSkyhookCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E61B65F949005216E2 /* TuneSkyhookCenter.h */; };
+		174C3304201BECE700772F28 /* TuneSkyhookCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E71B65F949005216E2 /* TuneSkyhookCenter.m */; };
+		174C3305201BECE700772F28 /* TuneSkyhookPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E81B65F949005216E2 /* TuneSkyhookPayload.h */; };
+		174C3306201BECE700772F28 /* TuneSkyhookPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E91B65F949005216E2 /* TuneSkyhookPayload.m */; };
+		174C3307201BECE700772F28 /* TuneSkyhookObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EA1B65F949005216E2 /* TuneSkyhookObserver.h */; };
+		174C3308201BECE700772F28 /* TuneSkyhookObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59EB1B65F949005216E2 /* TuneSkyhookObserver.m */; };
+		174C330F201BECF700772F28 /* TuneHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8D11B7D466500A98BF9 /* TuneHttpRequest.h */; };
+		174C3310201BECF700772F28 /* TuneHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8D21B7D466500A98BF9 /* TuneHttpRequest.m */; };
+		174C3311201BECF700772F28 /* TuneHttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B850E1B7C0EC200994318 /* TuneHttpResponse.h */; };
+		174C3312201BECF700772F28 /* TuneHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B850F1B7C0EC200994318 /* TuneHttpResponse.m */; };
+		174C3313201BECF700772F28 /* TuneHttpUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B851C1B7C114A00994318 /* TuneHttpUtils.h */; };
+		174C3314201BECF700772F28 /* TuneHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B851D1B7C114A00994318 /* TuneHttpUtils.m */; };
+		174C3317201BECFE00772F28 /* Tune.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59BB1B65F922005216E2 /* Tune.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C3318201BECFE00772F28 /* Tune.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59BC1B65F922005216E2 /* Tune.m */; };
+		174C3319201BECFE00772F28 /* TuneConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8868EE01C0FA880007E2F9C /* TuneConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C331C201BECFE00772F28 /* TuneEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C21B65F922005216E2 /* TuneEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C331D201BECFE00772F28 /* TuneEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C31B65F922005216E2 /* TuneEvent.m */; };
+		174C331E201BECFE00772F28 /* TuneEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C41B65F922005216E2 /* TuneEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C331F201BECFE00772F28 /* TuneEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C51B65F922005216E2 /* TuneEventItem.m */; };
+		174C3323201BECFE00772F28 /* TuneLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE7D1B79CC1D00501733 /* TuneLocation.m */; };
+		174C3324201BECFE00772F28 /* TuneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59B11B65F922005216E2 /* TuneManager.h */; };
+		174C3325201BECFE00772F28 /* TuneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B21B65F922005216E2 /* TuneManager.m */; };
+		174C3326201BECFE00772F28 /* TuneModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59AF1B65F922005216E2 /* TuneModule.h */; };
+		174C3327201BECFE00772F28 /* TuneModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B01B65F922005216E2 /* TuneModule.m */; };
+		174C332A201BECFE00772F28 /* TunePreloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C81B65F922005216E2 /* TunePreloadData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174C332B201BECFE00772F28 /* TunePreloadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C91B65F922005216E2 /* TunePreloadData.m */; };
+		174C332C201BECFE00772F28 /* TuneConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8947091CC55D5A00525862 /* TuneConstants.m */; };
+		174C333F201BED2200772F28 /* TuneDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E91B67E494000C7462 /* TuneDateUtils.h */; };
+		174C3340201BED2200772F28 /* TuneDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6EA1B67E494000C7462 /* TuneDateUtils.m */; };
+		174C3341201BED2200772F28 /* TuneDeviceDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8631B7D164300A98BF9 /* TuneDeviceDetails.h */; };
+		174C3342201BED2200772F28 /* TuneDeviceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8641B7D164300A98BF9 /* TuneDeviceDetails.m */; };
+		174C3343201BED2200772F28 /* TuneDeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F88F0B1B8512690060CDE7 /* TuneDeviceUtils.h */; };
+		174C3344201BED2200772F28 /* TuneDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F88F0C1B8512690060CDE7 /* TuneDeviceUtils.m */; };
+		174C3345201BED2200772F28 /* TuneEncrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2D1B65F9B8005216E2 /* TuneEncrypter.h */; };
+		174C3346201BED2200772F28 /* TuneEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2E1B65F9B8005216E2 /* TuneEncrypter.m */; };
+		174C3347201BED2200772F28 /* TuneFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B52709E1B7140420019ED0E /* TuneFileUtils.h */; };
+		174C3348201BED2200772F28 /* TuneFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B52709F1B7141E40019ED0E /* TuneFileUtils.m */; };
+		174C3349201BED2200772F28 /* TuneIadUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F81A460F1D9EF54D00D50867 /* TuneIadUtils.h */; };
+		174C334A201BED2200772F28 /* TuneIadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A46101D9EF54D00D50867 /* TuneIadUtils.m */; };
+		174C3355201BED2200772F28 /* TuneNetworkUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A6A9EC1D79D0AC00389F65 /* TuneNetworkUtils.h */; };
+		174C3356201BED2200772F28 /* TuneNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A6A9ED1D79D0AC00389F65 /* TuneNetworkUtils.m */; };
+		174C3359201BED2200772F28 /* TuneStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E11B66CA0B000C7462 /* TuneStringUtils.h */; };
+		174C335A201BED2200772F28 /* TuneStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6E21B66CA0B000C7462 /* TuneStringUtils.m */; };
+		174C335B201BED2200772F28 /* TuneUserDefaultsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4BB1E81B824B0A0084864D /* TuneUserDefaultsUtils.h */; };
+		174C335C201BED2200772F28 /* TuneUserDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB1EA1B824B2C0084864D /* TuneUserDefaultsUtils.m */; };
+		174C335D201BED2200772F28 /* TuneUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A451B65F9B8005216E2 /* TuneUtils.h */; };
+		174C335E201BED2200772F28 /* TuneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A461B65F9B8005216E2 /* TuneUtils.m */; };
+		174C3374201F9D6F00772F28 /* TuneParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F481B66325E00C51B87 /* TuneParametersTests.m */; };
+		174C3376201F9DB500772F28 /* TuneBlankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0FF56F1B9107660071B996 /* TuneBlankViewController.m */; };
+		174C3377201F9DC600772F28 /* TuneEncrypterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F4B1B66325E00C51B87 /* TuneEncrypterTests.m */; };
+		174C3378201F9DCF00772F28 /* TuneHTTPErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F491B66325E00C51B87 /* TuneHTTPErrorTests.m */; };
+		174C3379201F9DDA00772F28 /* TuneUserDefaultsUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB1ED1B82514A0084864D /* TuneUserDefaultsUtilsTests.m */; };
+		174C337A201F9DE600772F28 /* TuneEventItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F4A1B66325E00C51B87 /* TuneEventItemTests.m */; };
+		174C337B201F9DF100772F28 /* TuneServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F451B66325E00C51B87 /* TuneServerTests.m */; };
+		174C337C201F9DFB00772F28 /* SimpleObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DB40D33A1B87D0440034F218 /* SimpleObserver.m */; };
+		174C337D201F9E0800772F28 /* TuneXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F83419CA1CE3F4CC00142934 /* TuneXCTestCase.m */; };
+		174C337E201F9E1600772F28 /* TuneMeasureEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8CE1DD1B7976EF00BECDFC /* TuneMeasureEventTests.m */; };
+		174C337F201F9E2400772F28 /* TuneDateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83109941C8F6C90000669EF /* TuneDateUtilsTests.m */; };
+		174C3380201F9E3300772F28 /* TuneBlankAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AC66AF1BA8F39E0069B549 /* TuneBlankAppDelegate.m */; };
+		174C3381201F9E3A00772F28 /* TuneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F441B66325E00C51B87 /* TuneTests.m */; };
+		174C3383201F9E4F00772F28 /* TuneUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F401B66325E00C51B87 /* TuneUtilsTests.m */; };
+		174C3384201F9E5C00772F28 /* DictionaryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6F11B680079000C7462 /* DictionaryLoader.m */; };
+		174C3386201F9E7700772F28 /* TuneQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F461B66325E00C51B87 /* TuneQueueTests.m */; };
+		174C3387201F9E8100772F28 /* TuneTestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F671B66343400C51B87 /* TuneTestParams.m */; };
+		174C3388201F9E9500772F28 /* TuneEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F521B66325E00C51B87 /* TuneEventTests.m */; };
+		174C3389201F9E9D00772F28 /* NSURLRequest+TuneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEB61B7E4CB700501733 /* NSURLRequest+TuneUtils.m */; };
+		174C338A201F9EA700772F28 /* TuneTrackerInitializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F411B66325E00C51B87 /* TuneTrackerInitializationTests.m */; };
+		174C338C201F9EC800772F28 /* TuneTestsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F421B66325E00C51B87 /* TuneTestsHelper.m */; };
+		174C338D201F9ED200772F28 /* TunePreloadDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B770F471B66325E00C51B87 /* TunePreloadDataTests.m */; };
+		1761D4A42020F895007FA9CA /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1761D4A32020F895007FA9CA /* OCMock.framework */; };
+		1761D4A62020F8A2007FA9CA /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1761D4A52020F8A2007FA9CA /* OCMock.framework */; };
+		1762D5DF20003E35005BF239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BCB59AB1B65F864005216E2 /* InfoPlist.strings */; };
+		17BAA0782025344800F26DD3 /* TuneIfa.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE781B79B6F000501733 /* TuneIfa.m */; };
+		17BAA0792025344800F26DD3 /* TuneUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6461B6F433C008101CE /* TuneUserProfile.m */; };
+		17BAA07A2025344800F26DD3 /* TuneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A461B65F9B8005216E2 /* TuneUtils.m */; };
+		17BAA07B2025344800F26DD3 /* TuneSkyhookPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E91B65F949005216E2 /* TuneSkyhookPayload.m */; };
+		17BAA0822025344800F26DD3 /* TunePreloadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C91B65F922005216E2 /* TunePreloadData.m */; };
+		17BAA0832025344800F26DD3 /* TuneAnalyticsVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6221B6F1B61008101CE /* TuneAnalyticsVariable.m */; };
+		17BAA0842025344800F26DD3 /* TuneEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2E1B65F9B8005216E2 /* TuneEncrypter.m */; };
+		17BAA0872025344800F26DD3 /* TuneInstallReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A341B65F9B8005216E2 /* TuneInstallReceipt.m */; };
+		17BAA08B2025344800F26DD3 /* TuneSkyhookObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59EB1B65F949005216E2 /* TuneSkyhookObserver.m */; };
+		17BAA0952025344800F26DD3 /* TuneConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6411B6F1FAC008101CE /* TuneConfiguration.m */; };
+		17BAA0972025344800F26DD3 /* TuneDeeplinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2C1B65F9B8005216E2 /* TuneDeeplinker.m */; };
+		17BAA0982025344800F26DD3 /* TuneHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B850F1B7C0EC200994318 /* TuneHttpResponse.m */; };
+		17BAA09C2025344800F26DD3 /* TuneDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A42D1BBB3703006E3D4F /* TuneDeeplink.m */; };
+		17BAA0A12025344800F26DD3 /* TuneNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A6A9ED1D79D0AC00389F65 /* TuneNetworkUtils.m */; };
+		17BAA0A32025344800F26DD3 /* TuneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B21B65F922005216E2 /* TuneManager.m */; };
+		17BAA0A52025344800F26DD3 /* TuneEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C51B65F922005216E2 /* TuneEventItem.m */; };
+		17BAA0A62025344800F26DD3 /* TuneDeviceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8641B7D164300A98BF9 /* TuneDeviceDetails.m */; };
+		17BAA0A82025344800F26DD3 /* Tune.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59BC1B65F922005216E2 /* Tune.m */; };
+		17BAA0A92025344800F26DD3 /* TuneFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE881B7B8C6900501733 /* TuneFileManager.m */; };
+		17BAA0AA2025344800F26DD3 /* TuneLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE7D1B79CC1D00501733 /* TuneLocation.m */; };
+		17BAA0AF2025344800F26DD3 /* TuneFBBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A321B65F9B8005216E2 /* TuneFBBridge.m */; };
+		17BAA0B02025344800F26DD3 /* TuneSkyhookConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59ED1B65F949005216E2 /* TuneSkyhookConstants.m */; };
+		17BAA0B32025344800F26DD3 /* NSData+TuneGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE9B1B7DA93400501733 /* NSData+TuneGZIP.m */; };
+		17BAA0B52025344800F26DD3 /* TuneLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A381B65F9B8005216E2 /* TuneLocationHelper.m */; };
+		17BAA0B72025344800F26DD3 /* TuneSkyhookCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59E71B65F949005216E2 /* TuneSkyhookCenter.m */; };
+		17BAA0C02025344800F26DD3 /* TuneStoreKitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A401B65F9B8005216E2 /* TuneStoreKitDelegate.m */; };
+		17BAA0C62025344800F26DD3 /* TuneUserProfileKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F25EEC81B756A3900DD3C21 /* TuneUserProfileKeys.m */; };
+		17BAA0C82025344800F26DD3 /* TuneHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F87CE8D21B7D466500A98BF9 /* TuneHttpRequest.m */; };
+		17BAA0CC2025344800F26DD3 /* TuneSkyhookPayloadConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6261B6F1B61008101CE /* TuneSkyhookPayloadConstants.m */; };
+		17BAA0CD2025344800F26DD3 /* TuneConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8947091CC55D5A00525862 /* TuneConstants.m */; };
+		17BAA0CF2025344800F26DD3 /* TuneReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A3A1B65F9B8005216E2 /* TuneReachability.m */; };
+		17BAA0D12025344800F26DD3 /* TuneEventKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A400A1B83A813005DE80A /* TuneEventKeys.m */; };
+		17BAA0D22025344800F26DD3 /* TuneDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6EA1B67E494000C7462 /* TuneDateUtils.m */; };
+		17BAA0D32025344800F26DD3 /* TuneCWorks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A2A1B65F9B8005216E2 /* TuneCWorks.m */; };
+		17BAA0D42025344800F26DD3 /* TuneTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A421B65F9B8005216E2 /* TuneTracker.m */; };
+		17BAA0D72025344800F26DD3 /* TuneUserAgentCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A441B65F9B8005216E2 /* TuneUserAgentCollector.m */; };
+		17BAA0D92025344800F26DD3 /* TuneSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFEDD1B82804000501733 /* TuneSessionManager.m */; };
+		17BAA0DC2025344800F26DD3 /* TuneModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59B01B65F922005216E2 /* TuneModule.m */; };
+		17BAA0DE2025344800F26DD3 /* TuneAnalyticsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42D6201B6F1B61008101CE /* TuneAnalyticsConstants.m */; };
+		17BAA0E22025344800F26DD3 /* TuneEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A301B65F9B8005216E2 /* TuneEventQueue.m */; };
+		17BAA0E42025344800F26DD3 /* TuneStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24D6E21B66CA0B000C7462 /* TuneStringUtils.m */; };
+		17BAA0E72025344800F26DD3 /* TuneFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B52709F1B7141E40019ED0E /* TuneFileUtils.m */; };
+		17BAA0EA2025344800F26DD3 /* TuneKeyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB5A361B65F9B8005216E2 /* TuneKeyStrings.m */; };
+		17BAA0ED2025344800F26DD3 /* TuneEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB59C31B65F922005216E2 /* TuneEvent.m */; };
+		17BAA0EF2025344800F26DD3 /* TuneIadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A46101D9EF54D00D50867 /* TuneIadUtils.m */; };
+		17BAA0F02025344800F26DD3 /* TuneDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F88F0C1B8512690060CDE7 /* TuneDeviceUtils.m */; };
+		17BAA0F32025344800F26DD3 /* TuneHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B851D1B7C114A00994318 /* TuneHttpUtils.m */; };
+		17BAA0F42025344800F26DD3 /* TuneUserDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4BB1EA1B824B2C0084864D /* TuneUserDefaultsUtils.m */; };
+		17BAA1002025344800F26DD3 /* TuneEvent+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A261B65F9B8005216E2 /* TuneEvent+Internal.h */; };
+		17BAA1022025344800F26DD3 /* Tune.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59BB1B65F922005216E2 /* Tune.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA1042025344800F26DD3 /* TuneFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B52709E1B7140420019ED0E /* TuneFileUtils.h */; };
+		17BAA1072025344800F26DD3 /* TuneFBBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A311B65F9B8005216E2 /* TuneFBBridge.h */; };
+		17BAA1082025344800F26DD3 /* TuneKeyStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A351B65F9B8005216E2 /* TuneKeyStrings.h */; };
+		17BAA1092025344800F26DD3 /* TuneDeeplinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2B1B65F9B8005216E2 /* TuneDeeplinker.h */; };
+		17BAA10A2025344800F26DD3 /* TuneSkyhookCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E61B65F949005216E2 /* TuneSkyhookCenter.h */; };
+		17BAA10E2025344800F26DD3 /* TuneSkyhookConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EC1B65F949005216E2 /* TuneSkyhookConstants.h */; };
+		17BAA1132025344800F26DD3 /* TuneDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E91B67E494000C7462 /* TuneDateUtils.h */; };
+		17BAA1142025344800F26DD3 /* Tune+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A251B65F9B8005216E2 /* Tune+Internal.h */; };
+		17BAA1152025344800F26DD3 /* TuneDeeplink.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B9A42C1BBB3703006E3D4F /* TuneDeeplink.h */; };
+		17BAA1162025344800F26DD3 /* TuneIfa.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE771B79B6F000501733 /* TuneIfa.h */; };
+		17BAA1172025344800F26DD3 /* TuneSkyhookObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59EA1B65F949005216E2 /* TuneSkyhookObserver.h */; };
+		17BAA11B2025344800F26DD3 /* TuneEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C21B65F922005216E2 /* TuneEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA11C2025344800F26DD3 /* TuneDeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F88F0B1B8512690060CDE7 /* TuneDeviceUtils.h */; };
+		17BAA11D2025344800F26DD3 /* TuneReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A391B65F9B8005216E2 /* TuneReachability.h */; };
+		17BAA1232025344800F26DD3 /* TuneTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A411B65F9B8005216E2 /* TuneTracker.h */; };
+		17BAA1252025344800F26DD3 /* TuneHttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B850E1B7C0EC200994318 /* TuneHttpResponse.h */; };
+		17BAA1282025344800F26DD3 /* TuneInstallReceipt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A331B65F9B8005216E2 /* TuneInstallReceipt.h */; };
+		17BAA12F2025344800F26DD3 /* TuneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59B11B65F922005216E2 /* TuneManager.h */; };
+		17BAA1302025344800F26DD3 /* TuneStoreKitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A3F1B65F9B8005216E2 /* TuneStoreKitDelegate.h */; };
+		17BAA1332025344800F26DD3 /* TuneFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE851B7B8C5B00501733 /* TuneFileManager.h */; };
+		17BAA1342025344800F26DD3 /* TuneUserDefaultsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4BB1E81B824B0A0084864D /* TuneUserDefaultsUtils.h */; };
+		17BAA1382025344800F26DD3 /* TuneEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2F1B65F9B8005216E2 /* TuneEventQueue.h */; };
+		17BAA1392025344800F26DD3 /* TuneAnalyticsConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D61F1B6F1B61008101CE /* TuneAnalyticsConstants.h */; };
+		17BAA13C2025344800F26DD3 /* TuneEventKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5A40081B83A801005DE80A /* TuneEventKeys.h */; };
+		17BAA13D2025344800F26DD3 /* TuneConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F8868EE01C0FA880007E2F9C /* TuneConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA1402025344800F26DD3 /* TuneEncrypter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A2D1B65F9B8005216E2 /* TuneEncrypter.h */; };
+		17BAA1412025344800F26DD3 /* TuneIadUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F81A460F1D9EF54D00D50867 /* TuneIadUtils.h */; };
+		17BAA1422025344800F26DD3 /* TuneNetworkUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A6A9EC1D79D0AC00389F65 /* TuneNetworkUtils.h */; };
+		17BAA14D2025344800F26DD3 /* NSData+TuneGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE9A1B7DA91B00501733 /* NSData+TuneGZIP.h */; };
+		17BAA14E2025344800F26DD3 /* TuneUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A451B65F9B8005216E2 /* TuneUtils.h */; };
+		17BAA1502025344800F26DD3 /* TuneConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6401B6F1E32008101CE /* TuneConfiguration.h */; };
+		17BAA1522025344800F26DD3 /* TuneAnalyticsVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6211B6F1B61008101CE /* TuneAnalyticsVariable.h */; };
+		17BAA1532025344800F26DD3 /* TuneEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C41B65F922005216E2 /* TuneEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA1542025344800F26DD3 /* TuneHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8D11B7D466500A98BF9 /* TuneHttpRequest.h */; };
+		17BAA1562025344800F26DD3 /* TuneStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24D6E11B66CA0B000C7462 /* TuneStringUtils.h */; };
+		17BAA1582025344800F26DD3 /* TuneEventItem+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD219931B98D63100626DC6 /* TuneEventItem+Internal.h */; };
+		17BAA15B2025344800F26DD3 /* TuneSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFEDC1B827FDF00501733 /* TuneSessionManager.h */; };
+		17BAA15E2025344800F26DD3 /* TuneSkyhookPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59E81B65F949005216E2 /* TuneSkyhookPayload.h */; };
+		17BAA1602025344800F26DD3 /* TunePreloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59C81B65F922005216E2 /* TunePreloadData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA1612025344800F26DD3 /* TuneUserProfileKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F25EEC61B756A1F00DD3C21 /* TuneUserProfileKeys.h */; };
+		17BAA1652025344800F26DD3 /* TuneSkyhookPayloadConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6251B6F1B61008101CE /* TuneSkyhookPayloadConstants.h */; };
+		17BAA1662025344800F26DD3 /* TuneLocation+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7B1B79CC1D00501733 /* TuneLocation+Internal.h */; };
+		17BAA16E2025344800F26DD3 /* TuneModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB59AF1B65F922005216E2 /* TuneModule.h */; };
+		17BAA1702025344800F26DD3 /* TuneUserAgentCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A431B65F9B8005216E2 /* TuneUserAgentCollector.h */; };
+		17BAA1712025344800F26DD3 /* TuneCWorks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A291B65F9B8005216E2 /* TuneCWorks.h */; };
+		17BAA1742025344800F26DD3 /* TuneDeviceDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = F87CE8631B7D164300A98BF9 /* TuneDeviceDetails.h */; };
+		17BAA1792025344800F26DD3 /* TuneHttpUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F83B851C1B7C114A00994318 /* TuneHttpUtils.h */; };
+		17BAA17A2025344800F26DD3 /* TuneLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCB5A371B65F9B8005216E2 /* TuneLocationHelper.h */; };
+		17BAA17C2025344800F26DD3 /* TuneUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B42D6451B6F431A008101CE /* TuneUserProfile.h */; };
+		17BAA17F2025344800F26DD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BCB59AB1B65F864005216E2 /* InfoPlist.strings */; };
+		17BAA18C2028D4EA00F26DD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BCB59AB1B65F864005216E2 /* InfoPlist.strings */; };
+		17C46B78210140B600027C10 /* TuneLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7C1B79CC1D00501733 /* TuneLocation.h */; };
+		17C46B79210140B800027C10 /* TuneLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BECFE7C1B79CC1D00501733 /* TuneLocation.h */; };
+		3629A21E20E4119F00724397 /* TuneLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3629A21C20E4119F00724397 /* TuneLog.h */; };
+		3629A21F20E4119F00724397 /* TuneLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3629A21D20E4119F00724397 /* TuneLog.m */; };
+		3629A22020E411A600724397 /* TuneLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3629A21D20E4119F00724397 /* TuneLog.m */; };
+		3629A22120E411A600724397 /* TuneLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3629A21D20E4119F00724397 /* TuneLog.m */; };
+		3629A22520E418E600724397 /* TuneLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3629A22420E418E600724397 /* TuneLogTests.m */; };
+		3663298920895D4A0066EEAC /* TuneReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3663298820895D4A0066EEAC /* TuneReachabilityTests.m */; };
+		764F275F2049FF9C00A63F02 /* TuneNotInitializedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 764F275E2049FF9C00A63F02 /* TuneNotInitializedTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17301C6D1FFEE5A6001ADCC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BCB598C1B65EF6A005216E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17301C621FFEE5A5001ADCC2;
+			remoteInfo = Tune;
+		};
+		174C3260201BE38100772F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BCB598C1B65EF6A005216E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174C3255201BE37E00772F28;
+			remoteInfo = Tune_tvOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B42D61F1B6F1B61008101CE /* TuneAnalyticsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneAnalyticsConstants.h; sourceTree = "<group>"; };
+		0B42D6201B6F1B61008101CE /* TuneAnalyticsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneAnalyticsConstants.m; sourceTree = "<group>"; };
+		0B42D6211B6F1B61008101CE /* TuneAnalyticsVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneAnalyticsVariable.h; sourceTree = "<group>"; };
+		0B42D6221B6F1B61008101CE /* TuneAnalyticsVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneAnalyticsVariable.m; sourceTree = "<group>"; };
+		0B42D6251B6F1B61008101CE /* TuneSkyhookPayloadConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneSkyhookPayloadConstants.h; sourceTree = "<group>"; };
+		0B42D6261B6F1B61008101CE /* TuneSkyhookPayloadConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookPayloadConstants.m; sourceTree = "<group>"; };
+		0B42D6401B6F1E32008101CE /* TuneConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuneConfiguration.h; sourceTree = "<group>"; };
+		0B42D6411B6F1FAC008101CE /* TuneConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneConfiguration.m; sourceTree = "<group>"; };
+		0B42D6451B6F431A008101CE /* TuneUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuneUserProfile.h; sourceTree = "<group>"; };
+		0B42D6461B6F433C008101CE /* TuneUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserProfile.m; sourceTree = "<group>"; };
+		0B52709E1B7140420019ED0E /* TuneFileUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuneFileUtils.h; sourceTree = "<group>"; };
+		0B52709F1B7141E40019ED0E /* TuneFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneFileUtils.m; sourceTree = "<group>"; };
+		0B770F401B66325E00C51B87 /* TuneUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUtilsTests.m; sourceTree = "<group>"; };
+		0B770F411B66325E00C51B87 /* TuneTrackerInitializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneTrackerInitializationTests.m; sourceTree = "<group>"; };
+		0B770F421B66325E00C51B87 /* TuneTestsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneTestsHelper.m; sourceTree = "<group>"; };
+		0B770F431B66325E00C51B87 /* TuneTestsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneTestsHelper.h; sourceTree = "<group>"; };
+		0B770F441B66325E00C51B87 /* TuneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneTests.m; sourceTree = "<group>"; };
+		0B770F451B66325E00C51B87 /* TuneServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneServerTests.m; sourceTree = "<group>"; };
+		0B770F461B66325E00C51B87 /* TuneQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneQueueTests.m; sourceTree = "<group>"; };
+		0B770F471B66325E00C51B87 /* TunePreloadDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TunePreloadDataTests.m; sourceTree = "<group>"; };
+		0B770F481B66325E00C51B87 /* TuneParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneParametersTests.m; sourceTree = "<group>"; };
+		0B770F491B66325E00C51B87 /* TuneHTTPErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneHTTPErrorTests.m; sourceTree = "<group>"; };
+		0B770F4A1B66325E00C51B87 /* TuneEventItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEventItemTests.m; sourceTree = "<group>"; };
+		0B770F4B1B66325E00C51B87 /* TuneEncrypterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEncrypterTests.m; sourceTree = "<group>"; };
+		0B770F521B66325E00C51B87 /* TuneEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEventTests.m; sourceTree = "<group>"; };
+		0B770F671B66343400C51B87 /* TuneTestParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneTestParams.m; sourceTree = "<group>"; };
+		0B770F681B66343400C51B87 /* TuneTestParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneTestParams.h; sourceTree = "<group>"; };
+		0BCB59991B65EF6A005216E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0BCB599D1B65EF6A005216E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCB59AB1B65F864005216E2 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0BCB59AF1B65F922005216E2 /* TuneModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneModule.h; sourceTree = "<group>"; };
+		0BCB59B01B65F922005216E2 /* TuneModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneModule.m; sourceTree = "<group>"; };
+		0BCB59B11B65F922005216E2 /* TuneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneManager.h; sourceTree = "<group>"; };
+		0BCB59B21B65F922005216E2 /* TuneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneManager.m; sourceTree = "<group>"; };
+		0BCB59BB1B65F922005216E2 /* Tune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tune.h; sourceTree = "<group>"; };
+		0BCB59BC1B65F922005216E2 /* Tune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tune.m; sourceTree = "<group>"; };
+		0BCB59C21B65F922005216E2 /* TuneEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneEvent.h; sourceTree = "<group>"; };
+		0BCB59C31B65F922005216E2 /* TuneEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEvent.m; sourceTree = "<group>"; };
+		0BCB59C41B65F922005216E2 /* TuneEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneEventItem.h; sourceTree = "<group>"; };
+		0BCB59C51B65F922005216E2 /* TuneEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEventItem.m; sourceTree = "<group>"; };
+		0BCB59C81B65F922005216E2 /* TunePreloadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TunePreloadData.h; sourceTree = "<group>"; };
+		0BCB59C91B65F922005216E2 /* TunePreloadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TunePreloadData.m; sourceTree = "<group>"; };
+		0BCB59E61B65F949005216E2 /* TuneSkyhookCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneSkyhookCenter.h; sourceTree = "<group>"; };
+		0BCB59E71B65F949005216E2 /* TuneSkyhookCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookCenter.m; sourceTree = "<group>"; };
+		0BCB59E81B65F949005216E2 /* TuneSkyhookPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneSkyhookPayload.h; sourceTree = "<group>"; };
+		0BCB59E91B65F949005216E2 /* TuneSkyhookPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookPayload.m; sourceTree = "<group>"; };
+		0BCB59EA1B65F949005216E2 /* TuneSkyhookObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneSkyhookObserver.h; sourceTree = "<group>"; };
+		0BCB59EB1B65F949005216E2 /* TuneSkyhookObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookObserver.m; sourceTree = "<group>"; };
+		0BCB59EC1B65F949005216E2 /* TuneSkyhookConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneSkyhookConstants.h; sourceTree = "<group>"; };
+		0BCB59ED1B65F949005216E2 /* TuneSkyhookConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookConstants.m; sourceTree = "<group>"; };
+		0BCB5A251B65F9B8005216E2 /* Tune+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tune+Internal.h"; sourceTree = "<group>"; };
+		0BCB5A261B65F9B8005216E2 /* TuneEvent+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TuneEvent+Internal.h"; sourceTree = "<group>"; };
+		0BCB5A291B65F9B8005216E2 /* TuneCWorks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneCWorks.h; sourceTree = "<group>"; };
+		0BCB5A2A1B65F9B8005216E2 /* TuneCWorks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneCWorks.m; sourceTree = "<group>"; };
+		0BCB5A2B1B65F9B8005216E2 /* TuneDeeplinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneDeeplinker.h; sourceTree = "<group>"; };
+		0BCB5A2C1B65F9B8005216E2 /* TuneDeeplinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDeeplinker.m; sourceTree = "<group>"; };
+		0BCB5A2D1B65F9B8005216E2 /* TuneEncrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneEncrypter.h; sourceTree = "<group>"; };
+		0BCB5A2E1B65F9B8005216E2 /* TuneEncrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEncrypter.m; sourceTree = "<group>"; };
+		0BCB5A2F1B65F9B8005216E2 /* TuneEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneEventQueue.h; sourceTree = "<group>"; };
+		0BCB5A301B65F9B8005216E2 /* TuneEventQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEventQueue.m; sourceTree = "<group>"; };
+		0BCB5A311B65F9B8005216E2 /* TuneFBBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneFBBridge.h; sourceTree = "<group>"; };
+		0BCB5A321B65F9B8005216E2 /* TuneFBBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneFBBridge.m; sourceTree = "<group>"; };
+		0BCB5A331B65F9B8005216E2 /* TuneInstallReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneInstallReceipt.h; sourceTree = "<group>"; };
+		0BCB5A341B65F9B8005216E2 /* TuneInstallReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneInstallReceipt.m; sourceTree = "<group>"; };
+		0BCB5A351B65F9B8005216E2 /* TuneKeyStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneKeyStrings.h; sourceTree = "<group>"; };
+		0BCB5A361B65F9B8005216E2 /* TuneKeyStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneKeyStrings.m; sourceTree = "<group>"; };
+		0BCB5A371B65F9B8005216E2 /* TuneLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneLocationHelper.h; sourceTree = "<group>"; };
+		0BCB5A381B65F9B8005216E2 /* TuneLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneLocationHelper.m; sourceTree = "<group>"; };
+		0BCB5A391B65F9B8005216E2 /* TuneReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneReachability.h; sourceTree = "<group>"; };
+		0BCB5A3A1B65F9B8005216E2 /* TuneReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneReachability.m; sourceTree = "<group>"; };
+		0BCB5A3F1B65F9B8005216E2 /* TuneStoreKitDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneStoreKitDelegate.h; sourceTree = "<group>"; };
+		0BCB5A401B65F9B8005216E2 /* TuneStoreKitDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneStoreKitDelegate.m; sourceTree = "<group>"; };
+		0BCB5A411B65F9B8005216E2 /* TuneTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneTracker.h; sourceTree = "<group>"; };
+		0BCB5A421B65F9B8005216E2 /* TuneTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneTracker.m; sourceTree = "<group>"; };
+		0BCB5A431B65F9B8005216E2 /* TuneUserAgentCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneUserAgentCollector.h; sourceTree = "<group>"; };
+		0BCB5A441B65F9B8005216E2 /* TuneUserAgentCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserAgentCollector.m; sourceTree = "<group>"; };
+		0BCB5A451B65F9B8005216E2 /* TuneUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneUtils.h; sourceTree = "<group>"; };
+		0BCB5A461B65F9B8005216E2 /* TuneUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUtils.m; sourceTree = "<group>"; };
+		0BCB5ACE1B660A01005216E2 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0BCB5AD21B660CEB005216E2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0BCB5B3E1B661B76005216E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BECFE771B79B6F000501733 /* TuneIfa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneIfa.h; sourceTree = "<group>"; };
+		0BECFE781B79B6F000501733 /* TuneIfa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneIfa.m; sourceTree = "<group>"; };
+		0BECFE7B1B79CC1D00501733 /* TuneLocation+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TuneLocation+Internal.h"; sourceTree = "<group>"; };
+		0BECFE7C1B79CC1D00501733 /* TuneLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneLocation.h; sourceTree = "<group>"; };
+		0BECFE7D1B79CC1D00501733 /* TuneLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneLocation.m; sourceTree = "<group>"; };
+		0BECFE851B7B8C5B00501733 /* TuneFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneFileManager.h; sourceTree = "<group>"; };
+		0BECFE881B7B8C6900501733 /* TuneFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneFileManager.m; sourceTree = "<group>"; };
+		0BECFE8B1B7BA8EA00501733 /* TuneFileManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneFileManagerTests.m; sourceTree = "<group>"; };
+		0BECFE9A1B7DA91B00501733 /* NSData+TuneGZIP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+TuneGZIP.h"; sourceTree = "<group>"; };
+		0BECFE9B1B7DA93400501733 /* NSData+TuneGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TuneGZIP.m"; sourceTree = "<group>"; };
+		0BECFEB61B7E4CB700501733 /* NSURLRequest+TuneUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+TuneUtils.m"; sourceTree = "<group>"; };
+		0BECFEB81B7E4CD300501733 /* NSURLRequest+TuneUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+TuneUtils.h"; sourceTree = "<group>"; };
+		0BECFEDC1B827FDF00501733 /* TuneSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuneSessionManager.h; sourceTree = "<group>"; };
+		0BECFEDD1B82804000501733 /* TuneSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSessionManager.m; sourceTree = "<group>"; };
+		0BECFEE01B86A00500501733 /* TuneSessionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSessionManagerTests.m; sourceTree = "<group>"; };
+		1713E72C1FD0BA6D00214122 /* TuneRedactedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneRedactedTests.m; sourceTree = "<group>"; };
+		17301C631FFEE5A5001ADCC2 /* Tune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17301C6B1FFEE5A6001ADCC2 /* TuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17301C721FFEE5A6001ADCC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174C3256201BE37E00772F28 /* Tune_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tune_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		174C3258201BE37F00772F28 /* Tune_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tune_tvOS.h; sourceTree = "<group>"; };
+		174C325E201BE38000772F28 /* Tune_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tune_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		174C3263201BE38100772F28 /* Tune_tvOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tune_tvOSTests.m; sourceTree = "<group>"; };
+		174C3265201BE38100772F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1761D4A32020F895007FA9CA /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = "OCMock/iOS framework/OCMock.framework"; sourceTree = "<group>"; };
+		1761D4A52020F8A2007FA9CA /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = OCMock/tvOS/OCMock.framework; sourceTree = "<group>"; };
+		1768F8E51FBFAC68005D2958 /* NSURLSession+TuneDelegateMockServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TuneDelegateMockServer.h"; sourceTree = "<group>"; };
+		1768F8E61FBFAC68005D2958 /* NSURLSession+TuneDelegateMockServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TuneDelegateMockServer.m"; sourceTree = "<group>"; };
+		176E6D3A1FDEF7A400418D1E /* TuneNotRedactedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneNotRedactedTests.m; sourceTree = "<group>"; };
+		179C50BE1FFF0C7B00A2253B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		17BAA1842025344800F26DD3 /* Tune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D582F5202D239600F18FE5 /* NSURLSession+Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Logging.h"; sourceTree = "<group>"; };
+		17D582F6202D239600F18FE5 /* NSURLSession+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Logging.m"; sourceTree = "<group>"; };
+		3263C3211D5283CD0035DBDB /* TunePlaylistEmptySegmentTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TunePlaylistEmptySegmentTests.json; sourceTree = "<group>"; };
+		3277D3801D78A628006A57DB /* TunePlaylistMissingSegmentTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TunePlaylistMissingSegmentTests.json; sourceTree = "<group>"; };
+		32AC66AE1BA8F39E0069B549 /* TuneBlankAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneBlankAppDelegate.h; sourceTree = "<group>"; };
+		32AC66AF1BA8F39E0069B549 /* TuneBlankAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneBlankAppDelegate.m; sourceTree = "<group>"; };
+		32B9A42C1BBB3703006E3D4F /* TuneDeeplink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneDeeplink.h; sourceTree = "<group>"; };
+		32B9A42D1BBB3703006E3D4F /* TuneDeeplink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDeeplink.m; sourceTree = "<group>"; };
+		3629A21C20E4119F00724397 /* TuneLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuneLog.h; sourceTree = "<group>"; };
+		3629A21D20E4119F00724397 /* TuneLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneLog.m; sourceTree = "<group>"; };
+		3629A22420E418E600724397 /* TuneLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneLogTests.m; sourceTree = "<group>"; };
+		3663298820895D4A0066EEAC /* TuneReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneReachabilityTests.m; sourceTree = "<group>"; };
+		3F1BC5F61BBC59DB009FD499 /* TuneExperimentManagerTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TuneExperimentManagerTests.json; sourceTree = "<group>"; };
+		3F25EEC61B756A1F00DD3C21 /* TuneUserProfileKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneUserProfileKeys.h; sourceTree = "<group>"; };
+		3F25EEC81B756A3900DD3C21 /* TuneUserProfileKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserProfileKeys.m; sourceTree = "<group>"; };
+		3F4AA7611BB5B2B40084BE24 /* TuneSkyhookCenter+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TuneSkyhookCenter+Testing.h"; sourceTree = "<group>"; };
+		3F4AA7641BB5C4F50084BE24 /* TuneManager+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuneManager+Testing.h"; sourceTree = "<group>"; };
+		3F4AA7651BB5C6050084BE24 /* TuneEventQueue+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuneEventQueue+Testing.h"; sourceTree = "<group>"; };
+		3F4AA7661BB5C69B0084BE24 /* Tune+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tune+Testing.h"; sourceTree = "<group>"; };
+		3F4AA76E1BB5CCE30084BE24 /* TuneSessionManager+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuneSessionManager+Testing.h"; sourceTree = "<group>"; };
+		3F4AA76F1BB5CD5D0084BE24 /* TuneUserProfile+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuneUserProfile+Testing.h"; sourceTree = "<group>"; };
+		3F4BB1E81B824B0A0084864D /* TuneUserDefaultsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneUserDefaultsUtils.h; sourceTree = "<group>"; };
+		3F4BB1EA1B824B2C0084864D /* TuneUserDefaultsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserDefaultsUtils.m; sourceTree = "<group>"; };
+		3F4BB1ED1B82514A0084864D /* TuneUserDefaultsUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserDefaultsUtilsTests.m; sourceTree = "<group>"; };
+		3F54FE5C1B7C1A6E00813EAA /* TuneUserProfileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneUserProfileTests.m; sourceTree = "<group>"; };
+		3F5A40081B83A801005DE80A /* TuneEventKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneEventKeys.h; sourceTree = "<group>"; };
+		3F5A400A1B83A813005DE80A /* TuneEventKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneEventKeys.m; sourceTree = "<group>"; };
+		3FD219931B98D63100626DC6 /* TuneEventItem+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TuneEventItem+Internal.h"; sourceTree = "<group>"; };
+		764F275E2049FF9C00A63F02 /* TuneNotInitializedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuneNotInitializedTests.m; sourceTree = "<group>"; };
+		AE8947091CC55D5A00525862 /* TuneConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneConstants.m; sourceTree = "<group>"; };
+		DB0FF56E1B9107660071B996 /* TuneBlankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneBlankViewController.h; sourceTree = "<group>"; };
+		DB0FF56F1B9107660071B996 /* TuneBlankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneBlankViewController.m; sourceTree = "<group>"; };
+		DB24D6E11B66CA0B000C7462 /* TuneStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneStringUtils.h; sourceTree = "<group>"; };
+		DB24D6E21B66CA0B000C7462 /* TuneStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneStringUtils.m; sourceTree = "<group>"; };
+		DB24D6E91B67E494000C7462 /* TuneDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneDateUtils.h; sourceTree = "<group>"; };
+		DB24D6EA1B67E494000C7462 /* TuneDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDateUtils.m; sourceTree = "<group>"; };
+		DB24D6F11B680079000C7462 /* DictionaryLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryLoader.m; sourceTree = "<group>"; };
+		DB40D3391B87D0440034F218 /* SimpleObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleObserver.h; sourceTree = "<group>"; };
+		DB40D33A1B87D0440034F218 /* SimpleObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleObserver.m; sourceTree = "<group>"; };
+		DB8CE1DD1B7976EF00BECDFC /* TuneMeasureEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneMeasureEventTests.m; sourceTree = "<group>"; };
+		DB91355E1B680EAC006534E0 /* DictionaryLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryLoader.h; sourceTree = "<group>"; };
+		DB9135671B68114B006534E0 /* TunePowerHookValueTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TunePowerHookValueTests.json; sourceTree = "<group>"; };
+		DB918C3B1B8E62310077305B /* TuneSkyhookCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneSkyhookCenterTests.m; sourceTree = "<group>"; };
+		DBCA43521B8FA94800483318 /* TuneConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TuneConfiguration.plist; sourceTree = "<group>"; };
+		F81A460D1D9EE9D800D50867 /* TuneIadAttributionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneIadAttributionTests.m; sourceTree = "<group>"; };
+		F81A460F1D9EF54D00D50867 /* TuneIadUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneIadUtils.h; sourceTree = "<group>"; };
+		F81A46101D9EF54D00D50867 /* TuneIadUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneIadUtils.m; sourceTree = "<group>"; };
+		F83109941C8F6C90000669EF /* TuneDateUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDateUtilsTests.m; sourceTree = "<group>"; };
+		F83419C91CE3F4CC00142934 /* TuneXCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneXCTestCase.h; sourceTree = "<group>"; };
+		F83419CA1CE3F4CC00142934 /* TuneXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneXCTestCase.m; sourceTree = "<group>"; };
+		F8346B471CAF190800B0E7ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8346B491CAF192600B0E7ED /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F8346B4B1CAF194D00B0E7ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8346B4D1CAF195400B0E7ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F8346B4F1CAF195B00B0E7ED /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F8346B511CAF197500B0E7ED /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F8346B531CAF197A00B0E7ED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F8346B551CAF197F00B0E7ED /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F8346B571CAF199F00B0E7ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8346B591CAF19B700B0E7ED /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		F83B850E1B7C0EC200994318 /* TuneHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneHttpResponse.h; sourceTree = "<group>"; };
+		F83B850F1B7C0EC200994318 /* TuneHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneHttpResponse.m; sourceTree = "<group>"; };
+		F83B851C1B7C114A00994318 /* TuneHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneHttpUtils.h; sourceTree = "<group>"; };
+		F83B851D1B7C114A00994318 /* TuneHttpUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneHttpUtils.m; sourceTree = "<group>"; };
+		F847F4481C87BF8A009E0531 /* TuneDeeplinkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDeeplinkerTests.m; sourceTree = "<group>"; };
+		F87CE8631B7D164300A98BF9 /* TuneDeviceDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneDeviceDetails.h; sourceTree = "<group>"; };
+		F87CE8641B7D164300A98BF9 /* TuneDeviceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDeviceDetails.m; sourceTree = "<group>"; };
+		F87CE8D11B7D466500A98BF9 /* TuneHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneHttpRequest.h; sourceTree = "<group>"; };
+		F87CE8D21B7D466500A98BF9 /* TuneHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneHttpRequest.m; sourceTree = "<group>"; };
+		F8868EE01C0FA880007E2F9C /* TuneConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneConstants.h; sourceTree = "<group>"; };
+		F8A6A9EC1D79D0AC00389F65 /* TuneNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneNetworkUtils.h; sourceTree = "<group>"; };
+		F8A6A9ED1D79D0AC00389F65 /* TuneNetworkUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneNetworkUtils.m; sourceTree = "<group>"; };
+		F8F88F0B1B8512690060CDE7 /* TuneDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneDeviceUtils.h; sourceTree = "<group>"; };
+		F8F88F0C1B8512690060CDE7 /* TuneDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneDeviceUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17301C5F1FFEE5A5001ADCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17301C681FFEE5A6001ADCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1761D4A42020F895007FA9CA /* OCMock.framework in Frameworks */,
+				17301C6C1FFEE5A6001ADCC2 /* Tune.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C3252201BE37E00772F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C325B201BE38000772F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1761D4A62020F8A2007FA9CA /* OCMock.framework in Frameworks */,
+				174C325F201BE38100772F28 /* Tune_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BAA0F62025344800F26DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BCB598B1B65EF6A005216E2 = {
+			isa = PBXGroup;
+			children = (
+				0BCB599B1B65EF6A005216E2 /* Tune */,
+				0BCB5AAF1B660747005216E2 /* TuneTests */,
+				174C3257201BE37F00772F28 /* Tune_tvOS */,
+				174C3262201BE38100772F28 /* Tune_tvOSTests */,
+				0BCB59981B65EF6A005216E2 /* Frameworks */,
+				0BCB59971B65EF6A005216E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BCB59971B65EF6A005216E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17301C631FFEE5A5001ADCC2 /* Tune.framework */,
+				17301C6B1FFEE5A6001ADCC2 /* TuneTests.xctest */,
+				174C3256201BE37E00772F28 /* Tune_tvOS.framework */,
+				174C325E201BE38000772F28 /* Tune_tvOSTests.xctest */,
+				17BAA1842025344800F26DD3 /* Tune.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BCB59981B65EF6A005216E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1761D4A32020F895007FA9CA /* OCMock.framework */,
+				1761D4A52020F8A2007FA9CA /* OCMock.framework */,
+				179C50BE1FFF0C7B00A2253B /* XCTest.framework */,
+				F8346B591CAF19B700B0E7ED /* CoreSpotlight.framework */,
+				F8346B571CAF199F00B0E7ED /* CoreGraphics.framework */,
+				F8346B551CAF197F00B0E7ED /* StoreKit.framework */,
+				F8346B531CAF197A00B0E7ED /* Security.framework */,
+				F8346B511CAF197500B0E7ED /* iAd.framework */,
+				F8346B4F1CAF195B00B0E7ED /* MobileCoreServices.framework */,
+				F8346B4D1CAF195400B0E7ED /* SystemConfiguration.framework */,
+				F8346B4B1CAF194D00B0E7ED /* QuartzCore.framework */,
+				F8346B491CAF192600B0E7ED /* AdSupport.framework */,
+				F8346B471CAF190800B0E7ED /* UIKit.framework */,
+				0BCB5B3E1B661B76005216E2 /* Foundation.framework */,
+				0BCB5AD21B660CEB005216E2 /* CoreTelephony.framework */,
+				0BCB59991B65EF6A005216E2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BCB599B1B65EF6A005216E2 /* Tune */ = {
+			isa = PBXGroup;
+			children = (
+				36BE2C57210697E10042818F /* Integrations */,
+				36BE2C6021069BE90042818F /* Network */,
+				36BE2C5F21069BE70042818F /* Public */,
+				36BE2C5E21069BE50042818F /* Supporting Files */,
+				36BE2C5D21069BE20042818F /* Swizzles */,
+				36BE2C5C21069BE00042818F /* Utils */,
+				0BCB5A251B65F9B8005216E2 /* Tune+Internal.h */,
+				0BCB5A261B65F9B8005216E2 /* TuneEvent+Internal.h */,
+				3FD219931B98D63100626DC6 /* TuneEventItem+Internal.h */,
+				0BECFE7B1B79CC1D00501733 /* TuneLocation+Internal.h */,
+				0B42D6211B6F1B61008101CE /* TuneAnalyticsVariable.h */,
+				0B42D6221B6F1B61008101CE /* TuneAnalyticsVariable.m */,
+				0B42D61F1B6F1B61008101CE /* TuneAnalyticsConstants.h */,
+				0B42D6201B6F1B61008101CE /* TuneAnalyticsConstants.m */,
+				0B42D6401B6F1E32008101CE /* TuneConfiguration.h */,
+				0B42D6411B6F1FAC008101CE /* TuneConfiguration.m */,
+				0BCB5A291B65F9B8005216E2 /* TuneCWorks.h */,
+				0BCB5A2A1B65F9B8005216E2 /* TuneCWorks.m */,
+				32B9A42C1BBB3703006E3D4F /* TuneDeeplink.h */,
+				32B9A42D1BBB3703006E3D4F /* TuneDeeplink.m */,
+				0BCB5A2B1B65F9B8005216E2 /* TuneDeeplinker.h */,
+				0BCB5A2C1B65F9B8005216E2 /* TuneDeeplinker.m */,
+				3F5A40081B83A801005DE80A /* TuneEventKeys.h */,
+				3F5A400A1B83A813005DE80A /* TuneEventKeys.m */,
+				0BCB5A2F1B65F9B8005216E2 /* TuneEventQueue.h */,
+				0BCB5A301B65F9B8005216E2 /* TuneEventQueue.m */,
+				0BECFE851B7B8C5B00501733 /* TuneFileManager.h */,
+				0BECFE881B7B8C6900501733 /* TuneFileManager.m */,
+				0BECFE771B79B6F000501733 /* TuneIfa.h */,
+				0BECFE781B79B6F000501733 /* TuneIfa.m */,
+				0BCB5A331B65F9B8005216E2 /* TuneInstallReceipt.h */,
+				0BCB5A341B65F9B8005216E2 /* TuneInstallReceipt.m */,
+				0BCB5A351B65F9B8005216E2 /* TuneKeyStrings.h */,
+				0BCB5A361B65F9B8005216E2 /* TuneKeyStrings.m */,
+				0BECFE7C1B79CC1D00501733 /* TuneLocation.h */,
+				0BECFE7D1B79CC1D00501733 /* TuneLocation.m */,
+				0BCB59B11B65F922005216E2 /* TuneManager.h */,
+				0BCB59B21B65F922005216E2 /* TuneManager.m */,
+				0BCB59AF1B65F922005216E2 /* TuneModule.h */,
+				0BCB59B01B65F922005216E2 /* TuneModule.m */,
+				0BECFEDC1B827FDF00501733 /* TuneSessionManager.h */,
+				0BECFEDD1B82804000501733 /* TuneSessionManager.m */,
+				0BCB59E61B65F949005216E2 /* TuneSkyhookCenter.h */,
+				0BCB59E71B65F949005216E2 /* TuneSkyhookCenter.m */,
+				0BCB59EC1B65F949005216E2 /* TuneSkyhookConstants.h */,
+				0BCB59ED1B65F949005216E2 /* TuneSkyhookConstants.m */,
+				0BCB59EA1B65F949005216E2 /* TuneSkyhookObserver.h */,
+				0BCB59EB1B65F949005216E2 /* TuneSkyhookObserver.m */,
+				0BCB59E81B65F949005216E2 /* TuneSkyhookPayload.h */,
+				0BCB59E91B65F949005216E2 /* TuneSkyhookPayload.m */,
+				0B42D6251B6F1B61008101CE /* TuneSkyhookPayloadConstants.h */,
+				0B42D6261B6F1B61008101CE /* TuneSkyhookPayloadConstants.m */,
+				0BCB5A3F1B65F9B8005216E2 /* TuneStoreKitDelegate.h */,
+				0BCB5A401B65F9B8005216E2 /* TuneStoreKitDelegate.m */,
+				0BCB5A411B65F9B8005216E2 /* TuneTracker.h */,
+				0BCB5A421B65F9B8005216E2 /* TuneTracker.m */,
+				0BCB5A431B65F9B8005216E2 /* TuneUserAgentCollector.h */,
+				0BCB5A441B65F9B8005216E2 /* TuneUserAgentCollector.m */,
+				0B42D6451B6F431A008101CE /* TuneUserProfile.h */,
+				0B42D6461B6F433C008101CE /* TuneUserProfile.m */,
+				3F25EEC61B756A1F00DD3C21 /* TuneUserProfileKeys.h */,
+				3F25EEC81B756A3900DD3C21 /* TuneUserProfileKeys.m */,
+			);
+			path = Tune;
+			sourceTree = "<group>";
+		};
+		0BCB5AAF1B660747005216E2 /* TuneTests */ = {
+			isa = PBXGroup;
+			children = (
+				36AD3CB2210918850003D3E6 /* Categories */,
+				36AD3CB12109187F0003D3E6 /* Resources */,
+				36AD3CAF2109185E0003D3E6 /* Test Utils */,
+				17301C721FFEE5A6001ADCC2 /* Info.plist */,
+				0BCB5ACE1B660A01005216E2 /* InfoPlist.strings */,
+				1768F8E51FBFAC68005D2958 /* NSURLSession+TuneDelegateMockServer.h */,
+				1768F8E61FBFAC68005D2958 /* NSURLSession+TuneDelegateMockServer.m */,
+				F83109941C8F6C90000669EF /* TuneDateUtilsTests.m */,
+				F847F4481C87BF8A009E0531 /* TuneDeeplinkerTests.m */,
+				0B770F4B1B66325E00C51B87 /* TuneEncrypterTests.m */,
+				0B770F521B66325E00C51B87 /* TuneEventTests.m */,
+				0B770F4A1B66325E00C51B87 /* TuneEventItemTests.m */,
+				0BECFE8B1B7BA8EA00501733 /* TuneFileManagerTests.m */,
+				0B770F491B66325E00C51B87 /* TuneHTTPErrorTests.m */,
+				F81A460D1D9EE9D800D50867 /* TuneIadAttributionTests.m */,
+				3629A22420E418E600724397 /* TuneLogTests.m */,
+				DB8CE1DD1B7976EF00BECDFC /* TuneMeasureEventTests.m */,
+				764F275E2049FF9C00A63F02 /* TuneNotInitializedTests.m */,
+				176E6D3A1FDEF7A400418D1E /* TuneNotRedactedTests.m */,
+				0B770F481B66325E00C51B87 /* TuneParametersTests.m */,
+				0B770F471B66325E00C51B87 /* TunePreloadDataTests.m */,
+				0B770F461B66325E00C51B87 /* TuneQueueTests.m */,
+				3663298820895D4A0066EEAC /* TuneReachabilityTests.m */,
+				1713E72C1FD0BA6D00214122 /* TuneRedactedTests.m */,
+				0B770F451B66325E00C51B87 /* TuneServerTests.m */,
+				0BECFEE01B86A00500501733 /* TuneSessionManagerTests.m */,
+				DB918C3B1B8E62310077305B /* TuneSkyhookCenterTests.m */,
+				0B770F441B66325E00C51B87 /* TuneTests.m */,
+				0B770F411B66325E00C51B87 /* TuneTrackerInitializationTests.m */,
+				3F4BB1ED1B82514A0084864D /* TuneUserDefaultsUtilsTests.m */,
+				3F54FE5C1B7C1A6E00813EAA /* TuneUserProfileTests.m */,
+				0B770F401B66325E00C51B87 /* TuneUtilsTests.m */,
+			);
+			path = TuneTests;
+			sourceTree = "<group>";
+		};
+		174C3257201BE37F00772F28 /* Tune_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				174C3258201BE37F00772F28 /* Tune_tvOS.h */,
+			);
+			path = Tune_tvOS;
+			sourceTree = "<group>";
+		};
+		174C3262201BE38100772F28 /* Tune_tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				174C3263201BE38100772F28 /* Tune_tvOSTests.m */,
+				174C3265201BE38100772F28 /* Info.plist */,
+			);
+			path = Tune_tvOSTests;
+			sourceTree = "<group>";
+		};
+		3683B6F22106973F00FEB68C /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				0BCB5A311B65F9B8005216E2 /* TuneFBBridge.h */,
+				0BCB5A321B65F9B8005216E2 /* TuneFBBridge.m */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		36AD3CAF2109185E0003D3E6 /* Test Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB91355E1B680EAC006534E0 /* DictionaryLoader.h */,
+				DB24D6F11B680079000C7462 /* DictionaryLoader.m */,
+				0BECFEB81B7E4CD300501733 /* NSURLRequest+TuneUtils.h */,
+				0BECFEB61B7E4CB700501733 /* NSURLRequest+TuneUtils.m */,
+				DB40D3391B87D0440034F218 /* SimpleObserver.h */,
+				DB40D33A1B87D0440034F218 /* SimpleObserver.m */,
+				32AC66AE1BA8F39E0069B549 /* TuneBlankAppDelegate.h */,
+				32AC66AF1BA8F39E0069B549 /* TuneBlankAppDelegate.m */,
+				DB0FF56E1B9107660071B996 /* TuneBlankViewController.h */,
+				DB0FF56F1B9107660071B996 /* TuneBlankViewController.m */,
+				0B770F431B66325E00C51B87 /* TuneTestsHelper.h */,
+				0B770F421B66325E00C51B87 /* TuneTestsHelper.m */,
+				0B770F681B66343400C51B87 /* TuneTestParams.h */,
+				0B770F671B66343400C51B87 /* TuneTestParams.m */,
+				F83419C91CE3F4CC00142934 /* TuneXCTestCase.h */,
+				F83419CA1CE3F4CC00142934 /* TuneXCTestCase.m */,
+			);
+			name = "Test Utils";
+			sourceTree = "<group>";
+		};
+		36AD3CB12109187F0003D3E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBCA43521B8FA94800483318 /* TuneConfiguration.plist */,
+				3F1BC5F61BBC59DB009FD499 /* TuneExperimentManagerTests.json */,
+				3263C3211D5283CD0035DBDB /* TunePlaylistEmptySegmentTests.json */,
+				3277D3801D78A628006A57DB /* TunePlaylistMissingSegmentTests.json */,
+				DB9135671B68114B006534E0 /* TunePowerHookValueTests.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36AD3CB2210918850003D3E6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3F4AA7651BB5C6050084BE24 /* TuneEventQueue+Testing.h */,
+				3F4AA7641BB5C4F50084BE24 /* TuneManager+Testing.h */,
+				3F4AA76E1BB5CCE30084BE24 /* TuneSessionManager+Testing.h */,
+				3F4AA7611BB5B2B40084BE24 /* TuneSkyhookCenter+Testing.h */,
+				3F4AA7661BB5C69B0084BE24 /* Tune+Testing.h */,
+				3F4AA76F1BB5CD5D0084BE24 /* TuneUserProfile+Testing.h */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		36BE2C57210697E10042818F /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				3683B6F22106973F00FEB68C /* Facebook */,
+			);
+			name = Integrations;
+			sourceTree = "<group>";
+		};
+		36BE2C5C21069BE00042818F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0BECFE9A1B7DA91B00501733 /* NSData+TuneGZIP.h */,
+				0BECFE9B1B7DA93400501733 /* NSData+TuneGZIP.m */,
+				DB24D6E91B67E494000C7462 /* TuneDateUtils.h */,
+				DB24D6EA1B67E494000C7462 /* TuneDateUtils.m */,
+				F87CE8631B7D164300A98BF9 /* TuneDeviceDetails.h */,
+				F87CE8641B7D164300A98BF9 /* TuneDeviceDetails.m */,
+				F8F88F0B1B8512690060CDE7 /* TuneDeviceUtils.h */,
+				F8F88F0C1B8512690060CDE7 /* TuneDeviceUtils.m */,
+				0BCB5A2D1B65F9B8005216E2 /* TuneEncrypter.h */,
+				0BCB5A2E1B65F9B8005216E2 /* TuneEncrypter.m */,
+				0B52709E1B7140420019ED0E /* TuneFileUtils.h */,
+				0B52709F1B7141E40019ED0E /* TuneFileUtils.m */,
+				F81A460F1D9EF54D00D50867 /* TuneIadUtils.h */,
+				F81A46101D9EF54D00D50867 /* TuneIadUtils.m */,
+				0BCB5A371B65F9B8005216E2 /* TuneLocationHelper.h */,
+				0BCB5A381B65F9B8005216E2 /* TuneLocationHelper.m */,
+				3629A21C20E4119F00724397 /* TuneLog.h */,
+				3629A21D20E4119F00724397 /* TuneLog.m */,
+				F8A6A9EC1D79D0AC00389F65 /* TuneNetworkUtils.h */,
+				F8A6A9ED1D79D0AC00389F65 /* TuneNetworkUtils.m */,
+				DB24D6E11B66CA0B000C7462 /* TuneStringUtils.h */,
+				DB24D6E21B66CA0B000C7462 /* TuneStringUtils.m */,
+				3F4BB1E81B824B0A0084864D /* TuneUserDefaultsUtils.h */,
+				3F4BB1EA1B824B2C0084864D /* TuneUserDefaultsUtils.m */,
+				0BCB5A451B65F9B8005216E2 /* TuneUtils.h */,
+				0BCB5A461B65F9B8005216E2 /* TuneUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		36BE2C5D21069BE20042818F /* Swizzles */ = {
+			isa = PBXGroup;
+			children = (
+				17D582F5202D239600F18FE5 /* NSURLSession+Logging.h */,
+				17D582F6202D239600F18FE5 /* NSURLSession+Logging.m */,
+			);
+			name = Swizzles;
+			sourceTree = "<group>";
+		};
+		36BE2C5E21069BE50042818F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BCB599D1B65EF6A005216E2 /* Info.plist */,
+				0BCB59AB1B65F864005216E2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36BE2C5F21069BE70042818F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				0BCB59BB1B65F922005216E2 /* Tune.h */,
+				0BCB59BC1B65F922005216E2 /* Tune.m */,
+				F8868EE01C0FA880007E2F9C /* TuneConstants.h */,
+				AE8947091CC55D5A00525862 /* TuneConstants.m */,
+				0BCB59C21B65F922005216E2 /* TuneEvent.h */,
+				0BCB59C31B65F922005216E2 /* TuneEvent.m */,
+				0BCB59C41B65F922005216E2 /* TuneEventItem.h */,
+				0BCB59C51B65F922005216E2 /* TuneEventItem.m */,
+				0BCB59C81B65F922005216E2 /* TunePreloadData.h */,
+				0BCB59C91B65F922005216E2 /* TunePreloadData.m */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		36BE2C6021069BE90042818F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F87CE8D11B7D466500A98BF9 /* TuneHttpRequest.h */,
+				F87CE8D21B7D466500A98BF9 /* TuneHttpRequest.m */,
+				F83B850E1B7C0EC200994318 /* TuneHttpResponse.h */,
+				F83B850F1B7C0EC200994318 /* TuneHttpResponse.m */,
+				F83B851C1B7C114A00994318 /* TuneHttpUtils.h */,
+				F83B851D1B7C114A00994318 /* TuneHttpUtils.m */,
+				0BCB5A391B65F9B8005216E2 /* TuneReachability.h */,
+				0BCB5A3A1B65F9B8005216E2 /* TuneReachability.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17301C601FFEE5A5001ADCC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17301D381FFEE980001ADCC2 /* TuneEventItem.h in Headers */,
+				17301D441FFEE980001ADCC2 /* TunePreloadData.h in Headers */,
+				17301CE31FFEE6C2001ADCC2 /* TuneEvent+Internal.h in Headers */,
+				17301DC51FFEEC93001ADCC2 /* Tune.h in Headers */,
+				17301D611FFEE9A8001ADCC2 /* TuneFileUtils.h in Headers */,
+				17301C901FFEE644001ADCC2 /* TuneFBBridge.h in Headers */,
+				17301C961FFEE644001ADCC2 /* TuneKeyStrings.h in Headers */,
+				17301C8A1FFEE644001ADCC2 /* TuneDeeplinker.h in Headers */,
+				17301D1E1FFEE96C001ADCC2 /* TuneSkyhookCenter.h in Headers */,
+				17301D1A1FFEE968001ADCC2 /* TuneSkyhookConstants.h in Headers */,
+				17301D591FFEE9A8001ADCC2 /* TuneDateUtils.h in Headers */,
+				17301CE21FFEE6C2001ADCC2 /* Tune+Internal.h in Headers */,
+				17301CAA1FFEE64E001ADCC2 /* TuneDeeplink.h in Headers */,
+				17301C921FFEE644001ADCC2 /* TuneIfa.h in Headers */,
+				17301D221FFEE96C001ADCC2 /* TuneSkyhookObserver.h in Headers */,
+				17301D361FFEE980001ADCC2 /* TuneEvent.h in Headers */,
+				17301D5D1FFEE9A8001ADCC2 /* TuneDeviceUtils.h in Headers */,
+				17301C9A1FFEE644001ADCC2 /* TuneReachability.h in Headers */,
+				17301CA01FFEE644001ADCC2 /* TuneTracker.h in Headers */,
+				17301D2C1FFEE979001ADCC2 /* TuneHttpResponse.h in Headers */,
+				17301C941FFEE644001ADCC2 /* TuneInstallReceipt.h in Headers */,
+				17301D3E1FFEE980001ADCC2 /* TuneManager.h in Headers */,
+				17301C9E1FFEE644001ADCC2 /* TuneStoreKitDelegate.h in Headers */,
+				17301D0A1FFEE94E001ADCC2 /* TuneFileManager.h in Headers */,
+				17301D751FFEE9A8001ADCC2 /* TuneUserDefaultsUtils.h in Headers */,
+				17301C8E1FFEE644001ADCC2 /* TuneEventQueue.h in Headers */,
+				17301CA41FFEE649001ADCC2 /* TuneAnalyticsConstants.h in Headers */,
+				17301C8C1FFEE644001ADCC2 /* TuneEventKeys.h in Headers */,
+				17301D331FFEE980001ADCC2 /* TuneConstants.h in Headers */,
+				17301D3C1FFEE980001ADCC2 /* TuneLocation.h in Headers */,
+				17301D5F1FFEE9A8001ADCC2 /* TuneEncrypter.h in Headers */,
+				17301D631FFEE9A8001ADCC2 /* TuneIadUtils.h in Headers */,
+				17301D6F1FFEE9A8001ADCC2 /* TuneNetworkUtils.h in Headers */,
+				17301C7C1FFEE627001ADCC2 /* NSData+TuneGZIP.h in Headers */,
+				17301D771FFEE9A8001ADCC2 /* TuneUtils.h in Headers */,
+				17301CFC1FFEE6DE001ADCC2 /* TuneConfiguration.h in Headers */,
+				3629A21E20E4119F00724397 /* TuneLog.h in Headers */,
+				17301CEC1FFEE6CC001ADCC2 /* TuneAnalyticsVariable.h in Headers */,
+				17301D2A1FFEE979001ADCC2 /* TuneHttpRequest.h in Headers */,
+				17301D731FFEE9A8001ADCC2 /* TuneStringUtils.h in Headers */,
+				17301CE41FFEE6C2001ADCC2 /* TuneEventItem+Internal.h in Headers */,
+				17301D181FFEE961001ADCC2 /* TuneSessionManager.h in Headers */,
+				17301D201FFEE96C001ADCC2 /* TuneSkyhookPayload.h in Headers */,
+				17301D161FFEE95B001ADCC2 /* TuneUserProfileKeys.h in Headers */,
+				17301D1C1FFEE968001ADCC2 /* TuneSkyhookPayloadConstants.h in Headers */,
+				17301CE71FFEE6C2001ADCC2 /* TuneLocation+Internal.h in Headers */,
+				17301D401FFEE980001ADCC2 /* TuneModule.h in Headers */,
+				17301CA21FFEE644001ADCC2 /* TuneUserAgentCollector.h in Headers */,
+				17301C881FFEE644001ADCC2 /* TuneCWorks.h in Headers */,
+				17301D5B1FFEE9A8001ADCC2 /* TuneDeviceDetails.h in Headers */,
+				17301D2E1FFEE979001ADCC2 /* TuneHttpUtils.h in Headers */,
+				17301C981FFEE644001ADCC2 /* TuneLocationHelper.h in Headers */,
+				17301D141FFEE95B001ADCC2 /* TuneUserProfile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C3253201BE37E00772F28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174C333F201BED2200772F28 /* TuneDateUtils.h in Headers */,
+				174C3324201BECFE00772F28 /* TuneManager.h in Headers */,
+				174C32F9201BECD700772F28 /* TuneUserProfile.h in Headers */,
+				174C3307201BECE700772F28 /* TuneSkyhookObserver.h in Headers */,
+				174C3283201BEB0A00772F28 /* TuneFBBridge.h in Headers */,
+				174C3289201BEB0A00772F28 /* TuneKeyStrings.h in Headers */,
+				174C32C8201BEB3900772F28 /* TuneEvent+Internal.h in Headers */,
+				174C32E1201BEC5000772F28 /* TuneConfiguration.h in Headers */,
+				174C3317201BECFE00772F28 /* Tune.h in Headers */,
+				174C32FD201BECDC00772F28 /* TuneSessionManager.h in Headers */,
+				174C327D201BEB0A00772F28 /* TuneDeeplinker.h in Headers */,
+				17C46B78210140B600027C10 /* TuneLocation.h in Headers */,
+				174C329D201BEB1500772F28 /* TuneDeeplink.h in Headers */,
+				174C3285201BEB0A00772F28 /* TuneIfa.h in Headers */,
+				174C32CC201BEB3900772F28 /* TuneLocation+Internal.h in Headers */,
+				174C328D201BEB0A00772F28 /* TuneReachability.h in Headers */,
+				174C3303201BECE700772F28 /* TuneSkyhookCenter.h in Headers */,
+				174C3266201BE38100772F28 /* Tune_tvOS.h in Headers */,
+				174C3313201BECF700772F28 /* TuneHttpUtils.h in Headers */,
+				174C3293201BEB0A00772F28 /* TuneTracker.h in Headers */,
+				174C3287201BEB0A00772F28 /* TuneInstallReceipt.h in Headers */,
+				174C3326201BECFE00772F28 /* TuneModule.h in Headers */,
+				174C3345201BED2200772F28 /* TuneEncrypter.h in Headers */,
+				174C3301201BECE300772F28 /* TuneSkyhookPayloadConstants.h in Headers */,
+				174C3349201BED2200772F28 /* TuneIadUtils.h in Headers */,
+				174C3341201BED2200772F28 /* TuneDeviceDetails.h in Headers */,
+				174C32EF201BEC6600772F28 /* TuneFileManager.h in Headers */,
+				174C3305201BECE700772F28 /* TuneSkyhookPayload.h in Headers */,
+				174C32D1201BEB4200772F28 /* TuneAnalyticsVariable.h in Headers */,
+				174C331E201BECFE00772F28 /* TuneEventItem.h in Headers */,
+				174C3291201BEB0A00772F28 /* TuneStoreKitDelegate.h in Headers */,
+				174C3281201BEB0A00772F28 /* TuneEventQueue.h in Headers */,
+				174C3343201BED2200772F28 /* TuneDeviceUtils.h in Headers */,
+				174C335B201BED2200772F28 /* TuneUserDefaultsUtils.h in Headers */,
+				174C3297201BEB1000772F28 /* TuneAnalyticsConstants.h in Headers */,
+				174C3359201BED2200772F28 /* TuneStringUtils.h in Headers */,
+				174C327F201BEB0A00772F28 /* TuneEventKeys.h in Headers */,
+				174C326F201BEAFE00772F28 /* NSData+TuneGZIP.h in Headers */,
+				174C3311201BECF700772F28 /* TuneHttpResponse.h in Headers */,
+				174C32FF201BECE300772F28 /* TuneSkyhookConstants.h in Headers */,
+				174C32C9201BEB3900772F28 /* TuneEventItem+Internal.h in Headers */,
+				174C330F201BECF700772F28 /* TuneHttpRequest.h in Headers */,
+				174C3347201BED2200772F28 /* TuneFileUtils.h in Headers */,
+				174C32FB201BECD700772F28 /* TuneUserProfileKeys.h in Headers */,
+				174C3295201BEB0A00772F28 /* TuneUserAgentCollector.h in Headers */,
+				174C335D201BED2200772F28 /* TuneUtils.h in Headers */,
+				174C331C201BECFE00772F28 /* TuneEvent.h in Headers */,
+				174C32C7201BEB3900772F28 /* Tune+Internal.h in Headers */,
+				174C327B201BEB0A00772F28 /* TuneCWorks.h in Headers */,
+				174C332A201BECFE00772F28 /* TunePreloadData.h in Headers */,
+				174C328B201BEB0A00772F28 /* TuneLocationHelper.h in Headers */,
+				174C3355201BED2200772F28 /* TuneNetworkUtils.h in Headers */,
+				174C3319201BECFE00772F28 /* TuneConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BAA0F72025344800F26DD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA1002025344800F26DD3 /* TuneEvent+Internal.h in Headers */,
+				17BAA1022025344800F26DD3 /* Tune.h in Headers */,
+				17BAA1042025344800F26DD3 /* TuneFileUtils.h in Headers */,
+				17BAA1072025344800F26DD3 /* TuneFBBridge.h in Headers */,
+				17BAA1082025344800F26DD3 /* TuneKeyStrings.h in Headers */,
+				17BAA1092025344800F26DD3 /* TuneDeeplinker.h in Headers */,
+				17BAA10A2025344800F26DD3 /* TuneSkyhookCenter.h in Headers */,
+				17BAA10E2025344800F26DD3 /* TuneSkyhookConstants.h in Headers */,
+				17BAA1132025344800F26DD3 /* TuneDateUtils.h in Headers */,
+				17BAA1142025344800F26DD3 /* Tune+Internal.h in Headers */,
+				17BAA1152025344800F26DD3 /* TuneDeeplink.h in Headers */,
+				17BAA1162025344800F26DD3 /* TuneIfa.h in Headers */,
+				17BAA1172025344800F26DD3 /* TuneSkyhookObserver.h in Headers */,
+				17BAA11B2025344800F26DD3 /* TuneEvent.h in Headers */,
+				17BAA11C2025344800F26DD3 /* TuneDeviceUtils.h in Headers */,
+				17BAA11D2025344800F26DD3 /* TuneReachability.h in Headers */,
+				17BAA1232025344800F26DD3 /* TuneTracker.h in Headers */,
+				17BAA1252025344800F26DD3 /* TuneHttpResponse.h in Headers */,
+				17BAA1282025344800F26DD3 /* TuneInstallReceipt.h in Headers */,
+				17BAA12F2025344800F26DD3 /* TuneManager.h in Headers */,
+				17BAA1302025344800F26DD3 /* TuneStoreKitDelegate.h in Headers */,
+				17BAA1332025344800F26DD3 /* TuneFileManager.h in Headers */,
+				17BAA1342025344800F26DD3 /* TuneUserDefaultsUtils.h in Headers */,
+				17BAA1382025344800F26DD3 /* TuneEventQueue.h in Headers */,
+				17BAA1392025344800F26DD3 /* TuneAnalyticsConstants.h in Headers */,
+				17BAA13C2025344800F26DD3 /* TuneEventKeys.h in Headers */,
+				17BAA13D2025344800F26DD3 /* TuneConstants.h in Headers */,
+				17BAA1402025344800F26DD3 /* TuneEncrypter.h in Headers */,
+				17BAA1412025344800F26DD3 /* TuneIadUtils.h in Headers */,
+				17BAA1422025344800F26DD3 /* TuneNetworkUtils.h in Headers */,
+				17BAA14D2025344800F26DD3 /* NSData+TuneGZIP.h in Headers */,
+				17BAA14E2025344800F26DD3 /* TuneUtils.h in Headers */,
+				17BAA1502025344800F26DD3 /* TuneConfiguration.h in Headers */,
+				17BAA1522025344800F26DD3 /* TuneAnalyticsVariable.h in Headers */,
+				17BAA1532025344800F26DD3 /* TuneEventItem.h in Headers */,
+				17BAA1542025344800F26DD3 /* TuneHttpRequest.h in Headers */,
+				17BAA1562025344800F26DD3 /* TuneStringUtils.h in Headers */,
+				17BAA1582025344800F26DD3 /* TuneEventItem+Internal.h in Headers */,
+				17BAA15B2025344800F26DD3 /* TuneSessionManager.h in Headers */,
+				17BAA15E2025344800F26DD3 /* TuneSkyhookPayload.h in Headers */,
+				17BAA1602025344800F26DD3 /* TunePreloadData.h in Headers */,
+				17BAA1612025344800F26DD3 /* TuneUserProfileKeys.h in Headers */,
+				17BAA1652025344800F26DD3 /* TuneSkyhookPayloadConstants.h in Headers */,
+				17BAA1662025344800F26DD3 /* TuneLocation+Internal.h in Headers */,
+				17C46B79210140B800027C10 /* TuneLocation.h in Headers */,
+				17BAA16E2025344800F26DD3 /* TuneModule.h in Headers */,
+				17BAA1702025344800F26DD3 /* TuneUserAgentCollector.h in Headers */,
+				17BAA1712025344800F26DD3 /* TuneCWorks.h in Headers */,
+				17BAA1742025344800F26DD3 /* TuneDeviceDetails.h in Headers */,
+				17BAA1792025344800F26DD3 /* TuneHttpUtils.h in Headers */,
+				17BAA17A2025344800F26DD3 /* TuneLocationHelper.h in Headers */,
+				17BAA17C2025344800F26DD3 /* TuneUserProfile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17301C621FFEE5A5001ADCC2 /* Tune */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17301C741FFEE5A6001ADCC2 /* Build configuration list for PBXNativeTarget "Tune" */;
+			buildPhases = (
+				17301C5E1FFEE5A5001ADCC2 /* Sources */,
+				17301C5F1FFEE5A5001ADCC2 /* Frameworks */,
+				17301C601FFEE5A5001ADCC2 /* Headers */,
+				17301C611FFEE5A5001ADCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tune;
+			productName = Tune;
+			productReference = 17301C631FFEE5A5001ADCC2 /* Tune.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17301C6A1FFEE5A6001ADCC2 /* TuneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17301C781FFEE5A6001ADCC2 /* Build configuration list for PBXNativeTarget "TuneTests" */;
+			buildPhases = (
+				17301C671FFEE5A6001ADCC2 /* Sources */,
+				17301C681FFEE5A6001ADCC2 /* Frameworks */,
+				17301C691FFEE5A6001ADCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17301C6E1FFEE5A6001ADCC2 /* PBXTargetDependency */,
+			);
+			name = TuneTests;
+			productName = TuneTests;
+			productReference = 17301C6B1FFEE5A6001ADCC2 /* TuneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		174C3255201BE37E00772F28 /* Tune_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174C3267201BE38100772F28 /* Build configuration list for PBXNativeTarget "Tune_tvOS" */;
+			buildPhases = (
+				174C3251201BE37E00772F28 /* Sources */,
+				174C3252201BE37E00772F28 /* Frameworks */,
+				174C3253201BE37E00772F28 /* Headers */,
+				174C3254201BE37E00772F28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tune_tvOS;
+			productName = Tune_tvOS;
+			productReference = 174C3256201BE37E00772F28 /* Tune_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		174C325D201BE38000772F28 /* Tune_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174C326B201BE38100772F28 /* Build configuration list for PBXNativeTarget "Tune_tvOSTests" */;
+			buildPhases = (
+				174C325A201BE38000772F28 /* Sources */,
+				174C325B201BE38000772F28 /* Frameworks */,
+				174C325C201BE38000772F28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174C3261201BE38100772F28 /* PBXTargetDependency */,
+			);
+			name = Tune_tvOSTests;
+			productName = Tune_tvOSTests;
+			productReference = 174C325E201BE38000772F28 /* Tune_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17BAA0762025344800F26DD3 /* Tune_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17BAA1802025344800F26DD3 /* Build configuration list for PBXNativeTarget "Tune_static" */;
+			buildPhases = (
+				17BAA0772025344800F26DD3 /* Sources */,
+				17BAA0F62025344800F26DD3 /* Frameworks */,
+				17BAA0F72025344800F26DD3 /* Headers */,
+				17BAA17E2025344800F26DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tune_static;
+			productName = Tune;
+			productReference = 17BAA1842025344800F26DD3 /* Tune.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BCB598C1B65EF6A005216E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Tune;
+				TargetAttributes = {
+					17301C621FFEE5A5001ADCC2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					17301C6A1FFEE5A6001ADCC2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MN489GLUZK;
+						ProvisioningStyle = Automatic;
+					};
+					174C3255201BE37E00772F28 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					174C325D201BE38000772F28 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MN489GLUZK;
+						ProvisioningStyle = Automatic;
+					};
+					1761D4A72020FB0E007FA9CA = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MN489GLUZK;
+						ProvisioningStyle = Automatic;
+					};
+					178F059520053DF20088C0ED = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MN489GLUZK;
+						ProvisioningStyle = Automatic;
+					};
+					17BAA0762025344800F26DD3 = {
+						ProvisioningStyle = Automatic;
+					};
+					17BAA1862025376200F26DD3 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = MN489GLUZK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0BCB598F1B65EF6A005216E2 /* Build configuration list for PBXProject "Tune" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BCB598B1B65EF6A005216E2;
+			productRefGroup = 0BCB59971B65EF6A005216E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17301C621FFEE5A5001ADCC2 /* Tune */,
+				17301C6A1FFEE5A6001ADCC2 /* TuneTests */,
+				174C3255201BE37E00772F28 /* Tune_tvOS */,
+				174C325D201BE38000772F28 /* Tune_tvOSTests */,
+				178F059520053DF20088C0ED /* TuneUniversal */,
+				1761D4A72020FB0E007FA9CA /* TuneUniversal_tvOS */,
+				17BAA0762025344800F26DD3 /* Tune_static */,
+				17BAA1862025376200F26DD3 /* TuneUniversal_static */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17301C611FFEE5A5001ADCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1762D5DF20003E35005BF239 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17301C691FFEE5A6001ADCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17301DA11FFEEC42001ADCC2 /* InfoPlist.strings in Resources */,
+				17301D971FFEEC1B001ADCC2 /* TunePowerHookValueTests.json in Resources */,
+				17301D981FFEEC1B001ADCC2 /* TuneExperimentManagerTests.json in Resources */,
+				17301D961FFEEC1B001ADCC2 /* TuneConfiguration.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C3254201BE37E00772F28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA18C2028D4EA00F26DD3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C325C201BE38000772F28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BAA17E2025344800F26DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA17F2025344800F26DD3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1761D4AC2020FB36007FA9CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\n# tvOS framework has _tvOS appended\nFRAMEWORK_NAME=\"${PROJECT_NAME}_tvOS\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-appletvuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${FRAMEWORK_NAME} -sdk appletvsimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvsimulator 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${FRAMEWORK_NAME} -sdk appletvos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\n#if [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n#\n#if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n\n######################\n# On Release, copy the result to release directory\n######################\n#OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-appletvuniversal/\"\n\n#rm -rf \"$OUTPUT_DIR\"\n#mkdir -p \"$OUTPUT_DIR\"\n\n#cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\n#if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n#open \"${OUTPUT_DIR}/\"\n#fi";
+		};
+		178F059A20053FA80088C0ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${FRAMEWORK_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${FRAMEWORK_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\n#if [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n#\n#if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n\n######################\n# On Release, copy the result to release directory\n######################\n#OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n\n#rm -rf \"$OUTPUT_DIR\"\n#mkdir -p \"$OUTPUT_DIR\"\n\n#cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\n#if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n#open \"${OUTPUT_DIR}/\"\n#fi";
+		};
+		17BAA18B202537AF00F26DD3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\n# static framework has the same name as the dynamic framework!  Target name is different.\nTARGET_NAME=\"${PROJECT_NAME}_static\"\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal-static\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${TARGET_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target ${TARGET_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\n#if [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n#\n#if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n#\tcp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n#fi\n\n######################\n# On Release, copy the result to release directory\n######################\n#OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n\n#rm -rf \"$OUTPUT_DIR\"\n#mkdir -p \"$OUTPUT_DIR\"\n\n#cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\n#if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n#open \"${OUTPUT_DIR}/\"\n#fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17301C5E1FFEE5A5001ADCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17301C931FFEE644001ADCC2 /* TuneIfa.m in Sources */,
+				17301D151FFEE95B001ADCC2 /* TuneUserProfile.m in Sources */,
+				17301D781FFEE9A8001ADCC2 /* TuneUtils.m in Sources */,
+				17301D211FFEE96C001ADCC2 /* TuneSkyhookPayload.m in Sources */,
+				17301D451FFEE980001ADCC2 /* TunePreloadData.m in Sources */,
+				17301CED1FFEE6CC001ADCC2 /* TuneAnalyticsVariable.m in Sources */,
+				17301D601FFEE9A8001ADCC2 /* TuneEncrypter.m in Sources */,
+				17301C951FFEE644001ADCC2 /* TuneInstallReceipt.m in Sources */,
+				17301D231FFEE96C001ADCC2 /* TuneSkyhookObserver.m in Sources */,
+				17301CFD1FFEE6DE001ADCC2 /* TuneConfiguration.m in Sources */,
+				17301C8B1FFEE644001ADCC2 /* TuneDeeplinker.m in Sources */,
+				17301D2D1FFEE979001ADCC2 /* TuneHttpResponse.m in Sources */,
+				17301CAB1FFEE64E001ADCC2 /* TuneDeeplink.m in Sources */,
+				17301D701FFEE9A8001ADCC2 /* TuneNetworkUtils.m in Sources */,
+				17301D3F1FFEE980001ADCC2 /* TuneManager.m in Sources */,
+				17301D391FFEE980001ADCC2 /* TuneEventItem.m in Sources */,
+				17301D5C1FFEE9A8001ADCC2 /* TuneDeviceDetails.m in Sources */,
+				17301D321FFEE980001ADCC2 /* Tune.m in Sources */,
+				17301D0B1FFEE94E001ADCC2 /* TuneFileManager.m in Sources */,
+				17301D3D1FFEE980001ADCC2 /* TuneLocation.m in Sources */,
+				17301C911FFEE644001ADCC2 /* TuneFBBridge.m in Sources */,
+				17301D1B1FFEE968001ADCC2 /* TuneSkyhookConstants.m in Sources */,
+				17301C7D1FFEE62A001ADCC2 /* NSData+TuneGZIP.m in Sources */,
+				17301C991FFEE644001ADCC2 /* TuneLocationHelper.m in Sources */,
+				17301D1F1FFEE96C001ADCC2 /* TuneSkyhookCenter.m in Sources */,
+				17301C9F1FFEE644001ADCC2 /* TuneStoreKitDelegate.m in Sources */,
+				17301D171FFEE95B001ADCC2 /* TuneUserProfileKeys.m in Sources */,
+				17301D2B1FFEE979001ADCC2 /* TuneHttpRequest.m in Sources */,
+				17301D1D1FFEE968001ADCC2 /* TuneSkyhookPayloadConstants.m in Sources */,
+				17301D461FFEE980001ADCC2 /* TuneConstants.m in Sources */,
+				17301C9B1FFEE644001ADCC2 /* TuneReachability.m in Sources */,
+				17301C8D1FFEE644001ADCC2 /* TuneEventKeys.m in Sources */,
+				17301D5A1FFEE9A8001ADCC2 /* TuneDateUtils.m in Sources */,
+				17301C891FFEE644001ADCC2 /* TuneCWorks.m in Sources */,
+				17301CA11FFEE644001ADCC2 /* TuneTracker.m in Sources */,
+				17301CA31FFEE644001ADCC2 /* TuneUserAgentCollector.m in Sources */,
+				17301D191FFEE961001ADCC2 /* TuneSessionManager.m in Sources */,
+				3629A21F20E4119F00724397 /* TuneLog.m in Sources */,
+				17301D411FFEE980001ADCC2 /* TuneModule.m in Sources */,
+				17301CA51FFEE649001ADCC2 /* TuneAnalyticsConstants.m in Sources */,
+				17301C8F1FFEE644001ADCC2 /* TuneEventQueue.m in Sources */,
+				17301D741FFEE9A8001ADCC2 /* TuneStringUtils.m in Sources */,
+				17301D621FFEE9A8001ADCC2 /* TuneFileUtils.m in Sources */,
+				17301C971FFEE644001ADCC2 /* TuneKeyStrings.m in Sources */,
+				17301D371FFEE980001ADCC2 /* TuneEvent.m in Sources */,
+				17301D641FFEE9A8001ADCC2 /* TuneIadUtils.m in Sources */,
+				17301D5E1FFEE9A8001ADCC2 /* TuneDeviceUtils.m in Sources */,
+				17301D2F1FFEE979001ADCC2 /* TuneHttpUtils.m in Sources */,
+				17301D761FFEE9A8001ADCC2 /* TuneUserDefaultsUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17301C671FFEE5A6001ADCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17301DB11FFEEC68001ADCC2 /* TuneDeeplinkerTests.m in Sources */,
+				17301DBE1FFEEC68001ADCC2 /* TuneTrackerInitializationTests.m in Sources */,
+				17301DAA1FFEEC59001ADCC2 /* TuneTestParams.m in Sources */,
+				17301DA71FFEEC59001ADCC2 /* TuneBlankAppDelegate.m in Sources */,
+				17301D901FFEEC0F001ADCC2 /* TuneSessionManagerTests.m in Sources */,
+				17301DB61FFEEC68001ADCC2 /* TuneHTTPErrorTests.m in Sources */,
+				17301DB81FFEEC68001ADCC2 /* TuneMeasureEventTests.m in Sources */,
+				17301DBB1FFEEC68001ADCC2 /* TuneQueueTests.m in Sources */,
+				17301DBC1FFEEC68001ADCC2 /* TuneServerTests.m in Sources */,
+				17301D931FFEEC0F001ADCC2 /* TuneUserProfileTests.m in Sources */,
+				17301DA81FFEEC59001ADCC2 /* TuneBlankViewController.m in Sources */,
+				17301DBA1FFEEC68001ADCC2 /* TunePreloadDataTests.m in Sources */,
+				17301D8F1FFEEC0F001ADCC2 /* TuneFileManagerTests.m in Sources */,
+				17301DAB1FFEEC59001ADCC2 /* TuneXCTestCase.m in Sources */,
+				17301DA51FFEEC59001ADCC2 /* NSURLRequest+TuneUtils.m in Sources */,
+				17301DA61FFEEC59001ADCC2 /* SimpleObserver.m in Sources */,
+				17301DB91FFEEC68001ADCC2 /* TuneParametersTests.m in Sources */,
+				17301DB31FFEEC68001ADCC2 /* TuneEncrypterTests.m in Sources */,
+				764F275F2049FF9C00A63F02 /* TuneNotInitializedTests.m in Sources */,
+				17301DBF1FFEEC68001ADCC2 /* TuneUserDefaultsUtilsTests.m in Sources */,
+				3629A22520E418E600724397 /* TuneLogTests.m in Sources */,
+				17301DA91FFEEC59001ADCC2 /* TuneTestsHelper.m in Sources */,
+				17301DC31FFEEC6C001ADCC2 /* TuneRedactedTests.m in Sources */,
+				17301DC41FFEEC6C001ADCC2 /* TuneNotRedactedTests.m in Sources */,
+				17301DAE1FFEEC5E001ADCC2 /* TuneDateUtilsTests.m in Sources */,
+				3663298920895D4A0066EEAC /* TuneReachabilityTests.m in Sources */,
+				17301DC21FFEEC6C001ADCC2 /* NSURLSession+TuneDelegateMockServer.m in Sources */,
+				17301D911FFEEC0F001ADCC2 /* TuneSkyhookCenterTests.m in Sources */,
+				17301DC01FFEEC68001ADCC2 /* TuneUtilsTests.m in Sources */,
+				17301DA41FFEEC59001ADCC2 /* DictionaryLoader.m in Sources */,
+				17301DB71FFEEC68001ADCC2 /* TuneIadAttributionTests.m in Sources */,
+				17301DBD1FFEEC68001ADCC2 /* TuneTests.m in Sources */,
+				17301DB41FFEEC68001ADCC2 /* TuneEventItemTests.m in Sources */,
+				17301DB51FFEEC68001ADCC2 /* TuneEventTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C3251201BE37E00772F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174C32F0201BEC6600772F28 /* TuneFileManager.m in Sources */,
+				174C32E2201BEC5000772F28 /* TuneConfiguration.m in Sources */,
+				174C3340201BED2200772F28 /* TuneDateUtils.m in Sources */,
+				174C3286201BEB0A00772F28 /* TuneIfa.m in Sources */,
+				174C3288201BEB0A00772F28 /* TuneInstallReceipt.m in Sources */,
+				174C3302201BECE300772F28 /* TuneSkyhookPayloadConstants.m in Sources */,
+				174C3323201BECFE00772F28 /* TuneLocation.m in Sources */,
+				174C335E201BED2200772F28 /* TuneUtils.m in Sources */,
+				174C3306201BECE700772F28 /* TuneSkyhookPayload.m in Sources */,
+				174C32FC201BECD700772F28 /* TuneUserProfileKeys.m in Sources */,
+				174C331F201BECFE00772F28 /* TuneEventItem.m in Sources */,
+				174C3327201BECFE00772F28 /* TuneModule.m in Sources */,
+				174C3325201BECFE00772F28 /* TuneManager.m in Sources */,
+				174C32FA201BECD700772F28 /* TuneUserProfile.m in Sources */,
+				174C3318201BECFE00772F28 /* Tune.m in Sources */,
+				174C3346201BED2200772F28 /* TuneEncrypter.m in Sources */,
+				174C327E201BEB0A00772F28 /* TuneDeeplinker.m in Sources */,
+				174C3348201BED2200772F28 /* TuneFileUtils.m in Sources */,
+				174C331D201BECFE00772F28 /* TuneEvent.m in Sources */,
+				174C329E201BEB1500772F28 /* TuneDeeplink.m in Sources */,
+				174C3312201BECF700772F28 /* TuneHttpResponse.m in Sources */,
+				174C3284201BEB0A00772F28 /* TuneFBBridge.m in Sources */,
+				174C332C201BECFE00772F28 /* TuneConstants.m in Sources */,
+				174C3270201BEAFE00772F28 /* NSData+TuneGZIP.m in Sources */,
+				174C3308201BECE700772F28 /* TuneSkyhookObserver.m in Sources */,
+				174C32FE201BECDC00772F28 /* TuneSessionManager.m in Sources */,
+				174C3300201BECE300772F28 /* TuneSkyhookConstants.m in Sources */,
+				174C3344201BED2200772F28 /* TuneDeviceUtils.m in Sources */,
+				174C32D2201BEB4200772F28 /* TuneAnalyticsVariable.m in Sources */,
+				174C328C201BEB0A00772F28 /* TuneLocationHelper.m in Sources */,
+				174C3342201BED2200772F28 /* TuneDeviceDetails.m in Sources */,
+				174C3310201BECF700772F28 /* TuneHttpRequest.m in Sources */,
+				174C335C201BED2200772F28 /* TuneUserDefaultsUtils.m in Sources */,
+				174C3292201BEB0A00772F28 /* TuneStoreKitDelegate.m in Sources */,
+				174C3304201BECE700772F28 /* TuneSkyhookCenter.m in Sources */,
+				174C328E201BEB0A00772F28 /* TuneReachability.m in Sources */,
+				174C3314201BECF700772F28 /* TuneHttpUtils.m in Sources */,
+				3629A22020E411A600724397 /* TuneLog.m in Sources */,
+				174C3280201BEB0A00772F28 /* TuneEventKeys.m in Sources */,
+				174C327C201BEB0A00772F28 /* TuneCWorks.m in Sources */,
+				174C3294201BEB0A00772F28 /* TuneTracker.m in Sources */,
+				174C334A201BED2200772F28 /* TuneIadUtils.m in Sources */,
+				174C3296201BEB0A00772F28 /* TuneUserAgentCollector.m in Sources */,
+				174C335A201BED2200772F28 /* TuneStringUtils.m in Sources */,
+				174C3356201BED2200772F28 /* TuneNetworkUtils.m in Sources */,
+				174C3298201BEB1000772F28 /* TuneAnalyticsConstants.m in Sources */,
+				174C3282201BEB0A00772F28 /* TuneEventQueue.m in Sources */,
+				174C332B201BECFE00772F28 /* TunePreloadData.m in Sources */,
+				174C328A201BEB0A00772F28 /* TuneKeyStrings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C325A201BE38000772F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174C338D201F9ED200772F28 /* TunePreloadDataTests.m in Sources */,
+				174C338C201F9EC800772F28 /* TuneTestsHelper.m in Sources */,
+				174C338A201F9EA700772F28 /* TuneTrackerInitializationTests.m in Sources */,
+				174C3389201F9E9D00772F28 /* NSURLRequest+TuneUtils.m in Sources */,
+				174C3388201F9E9500772F28 /* TuneEventTests.m in Sources */,
+				174C3387201F9E8100772F28 /* TuneTestParams.m in Sources */,
+				174C3386201F9E7700772F28 /* TuneQueueTests.m in Sources */,
+				174C3384201F9E5C00772F28 /* DictionaryLoader.m in Sources */,
+				174C3383201F9E4F00772F28 /* TuneUtilsTests.m in Sources */,
+				174C3381201F9E3A00772F28 /* TuneTests.m in Sources */,
+				174C3380201F9E3300772F28 /* TuneBlankAppDelegate.m in Sources */,
+				174C337F201F9E2400772F28 /* TuneDateUtilsTests.m in Sources */,
+				174C337E201F9E1600772F28 /* TuneMeasureEventTests.m in Sources */,
+				174C337D201F9E0800772F28 /* TuneXCTestCase.m in Sources */,
+				174C337C201F9DFB00772F28 /* SimpleObserver.m in Sources */,
+				174C337B201F9DF100772F28 /* TuneServerTests.m in Sources */,
+				174C337A201F9DE600772F28 /* TuneEventItemTests.m in Sources */,
+				174C3379201F9DDA00772F28 /* TuneUserDefaultsUtilsTests.m in Sources */,
+				174C3378201F9DCF00772F28 /* TuneHTTPErrorTests.m in Sources */,
+				174C3377201F9DC600772F28 /* TuneEncrypterTests.m in Sources */,
+				174C3376201F9DB500772F28 /* TuneBlankViewController.m in Sources */,
+				174C3374201F9D6F00772F28 /* TuneParametersTests.m in Sources */,
+				174C3264201BE38100772F28 /* Tune_tvOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BAA0772025344800F26DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA0782025344800F26DD3 /* TuneIfa.m in Sources */,
+				17BAA0792025344800F26DD3 /* TuneUserProfile.m in Sources */,
+				17BAA07A2025344800F26DD3 /* TuneUtils.m in Sources */,
+				17BAA07B2025344800F26DD3 /* TuneSkyhookPayload.m in Sources */,
+				17BAA0822025344800F26DD3 /* TunePreloadData.m in Sources */,
+				17BAA0832025344800F26DD3 /* TuneAnalyticsVariable.m in Sources */,
+				17BAA0842025344800F26DD3 /* TuneEncrypter.m in Sources */,
+				17BAA0872025344800F26DD3 /* TuneInstallReceipt.m in Sources */,
+				17BAA08B2025344800F26DD3 /* TuneSkyhookObserver.m in Sources */,
+				17BAA0952025344800F26DD3 /* TuneConfiguration.m in Sources */,
+				17BAA0972025344800F26DD3 /* TuneDeeplinker.m in Sources */,
+				17BAA0982025344800F26DD3 /* TuneHttpResponse.m in Sources */,
+				17BAA09C2025344800F26DD3 /* TuneDeeplink.m in Sources */,
+				17BAA0A12025344800F26DD3 /* TuneNetworkUtils.m in Sources */,
+				17BAA0A32025344800F26DD3 /* TuneManager.m in Sources */,
+				17BAA0A52025344800F26DD3 /* TuneEventItem.m in Sources */,
+				17BAA0A62025344800F26DD3 /* TuneDeviceDetails.m in Sources */,
+				17BAA0A82025344800F26DD3 /* Tune.m in Sources */,
+				17BAA0A92025344800F26DD3 /* TuneFileManager.m in Sources */,
+				17BAA0AA2025344800F26DD3 /* TuneLocation.m in Sources */,
+				17BAA0AF2025344800F26DD3 /* TuneFBBridge.m in Sources */,
+				17BAA0B02025344800F26DD3 /* TuneSkyhookConstants.m in Sources */,
+				17BAA0B32025344800F26DD3 /* NSData+TuneGZIP.m in Sources */,
+				17BAA0B52025344800F26DD3 /* TuneLocationHelper.m in Sources */,
+				17BAA0B72025344800F26DD3 /* TuneSkyhookCenter.m in Sources */,
+				17BAA0C02025344800F26DD3 /* TuneStoreKitDelegate.m in Sources */,
+				17BAA0C62025344800F26DD3 /* TuneUserProfileKeys.m in Sources */,
+				17BAA0C82025344800F26DD3 /* TuneHttpRequest.m in Sources */,
+				17BAA0CC2025344800F26DD3 /* TuneSkyhookPayloadConstants.m in Sources */,
+				17BAA0CD2025344800F26DD3 /* TuneConstants.m in Sources */,
+				17BAA0CF2025344800F26DD3 /* TuneReachability.m in Sources */,
+				17BAA0D12025344800F26DD3 /* TuneEventKeys.m in Sources */,
+				17BAA0D22025344800F26DD3 /* TuneDateUtils.m in Sources */,
+				17BAA0D32025344800F26DD3 /* TuneCWorks.m in Sources */,
+				17BAA0D42025344800F26DD3 /* TuneTracker.m in Sources */,
+				17BAA0D72025344800F26DD3 /* TuneUserAgentCollector.m in Sources */,
+				17BAA0D92025344800F26DD3 /* TuneSessionManager.m in Sources */,
+				3629A22120E411A600724397 /* TuneLog.m in Sources */,
+				17BAA0DC2025344800F26DD3 /* TuneModule.m in Sources */,
+				17BAA0DE2025344800F26DD3 /* TuneAnalyticsConstants.m in Sources */,
+				17BAA0E22025344800F26DD3 /* TuneEventQueue.m in Sources */,
+				17BAA0E42025344800F26DD3 /* TuneStringUtils.m in Sources */,
+				17BAA0E72025344800F26DD3 /* TuneFileUtils.m in Sources */,
+				17BAA0EA2025344800F26DD3 /* TuneKeyStrings.m in Sources */,
+				17BAA0ED2025344800F26DD3 /* TuneEvent.m in Sources */,
+				17BAA0EF2025344800F26DD3 /* TuneIadUtils.m in Sources */,
+				17BAA0F02025344800F26DD3 /* TuneDeviceUtils.m in Sources */,
+				17BAA0F32025344800F26DD3 /* TuneHttpUtils.m in Sources */,
+				17BAA0F42025344800F26DD3 /* TuneUserDefaultsUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17301C6E1FFEE5A6001ADCC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17301C621FFEE5A5001ADCC2 /* Tune */;
+			targetProxy = 17301C6D1FFEE5A6001ADCC2 /* PBXContainerItemProxy */;
+		};
+		174C3261201BE38100772F28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174C3255201BE37E00772F28 /* Tune_tvOS */;
+			targetProxy = 174C3260201BE38100772F28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BCB59A61B65EF6A005216E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TESTING=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0BCB59A71B65EF6A005216E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		17301C751FFEE5A6001ADCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17301C761FFEE5A6001ADCC2 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		17301C771FFEE5A6001ADCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17301C791FFEE5A6001ADCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/iOS\\ framework",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TuneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/iOS\\ framework";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.TuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17301C7A1FFEE5A6001ADCC2 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/iOS\\ framework",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TuneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/iOS\\ framework";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.TuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		17301C7B1FFEE5A6001ADCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/iOS\\ framework",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TuneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/iOS\\ framework";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.TuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		174C3268201BE38100772F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune_tvOS/Tune_tvOS.modulemap;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		174C3269201BE38100772F28 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune_tvOS/Tune_tvOS.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		174C326A201BE38100772F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Tune_tvOS/Tune_tvOS.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		174C326C201BE38100772F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/tvOS";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		174C326D201BE38100772F28 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Test;
+		};
+		174C326E201BE38100772F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TuneTests",
+					"$(PROJECT_DIR)/OCMock/tvOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tune_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/OCMock/tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tune.Tune-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		1761D4A92020FB0F007FA9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+			};
+			name = Debug;
+		};
+		1761D4AA2020FB0F007FA9CA /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+			};
+			name = Test;
+		};
+		1761D4AB2020FB0F007FA9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+			};
+			name = Release;
+		};
+		178F059720053DF20088C0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		178F059820053DF20088C0ED /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		178F059920053DF20088C0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17BAA1812025344800F26DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = Tune;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17BAA1822025344800F26DD3 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = Tune;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		17BAA1832025344800F26DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Tune/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = Tune/Tune.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tune.Tune;
+				PRODUCT_NAME = Tune;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17BAA1882025376200F26DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17BAA1892025376200F26DD3 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		17BAA18A2025376200F26DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN489GLUZK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F876222F1C3C72DA0072E102 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TESTING=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Test;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BCB598F1B65EF6A005216E2 /* Build configuration list for PBXProject "Tune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BCB59A61B65EF6A005216E2 /* Debug */,
+				F876222F1C3C72DA0072E102 /* Test */,
+				0BCB59A71B65EF6A005216E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17301C741FFEE5A6001ADCC2 /* Build configuration list for PBXNativeTarget "Tune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17301C751FFEE5A6001ADCC2 /* Debug */,
+				17301C761FFEE5A6001ADCC2 /* Test */,
+				17301C771FFEE5A6001ADCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17301C781FFEE5A6001ADCC2 /* Build configuration list for PBXNativeTarget "TuneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17301C791FFEE5A6001ADCC2 /* Debug */,
+				17301C7A1FFEE5A6001ADCC2 /* Test */,
+				17301C7B1FFEE5A6001ADCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174C3267201BE38100772F28 /* Build configuration list for PBXNativeTarget "Tune_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174C3268201BE38100772F28 /* Debug */,
+				174C3269201BE38100772F28 /* Test */,
+				174C326A201BE38100772F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174C326B201BE38100772F28 /* Build configuration list for PBXNativeTarget "Tune_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174C326C201BE38100772F28 /* Debug */,
+				174C326D201BE38100772F28 /* Test */,
+				174C326E201BE38100772F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1761D4A82020FB0F007FA9CA /* Build configuration list for PBXAggregateTarget "TuneUniversal_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1761D4A92020FB0F007FA9CA /* Debug */,
+				1761D4AA2020FB0F007FA9CA /* Test */,
+				1761D4AB2020FB0F007FA9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178F059620053DF20088C0ED /* Build configuration list for PBXAggregateTarget "TuneUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178F059720053DF20088C0ED /* Debug */,
+				178F059820053DF20088C0ED /* Test */,
+				178F059920053DF20088C0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17BAA1802025344800F26DD3 /* Build configuration list for PBXNativeTarget "Tune_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BAA1812025344800F26DD3 /* Debug */,
+				17BAA1822025344800F26DD3 /* Test */,
+				17BAA1832025344800F26DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17BAA1872025376200F26DD3 /* Build configuration list for PBXAggregateTarget "TuneUniversal_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BAA1882025376200F26DD3 /* Debug */,
+				17BAA1892025376200F26DD3 /* Test */,
+				17BAA18A2025376200F26DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BCB598C1B65EF6A005216E2 /* Project object */;
+}
